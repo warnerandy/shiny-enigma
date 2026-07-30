@@ -35,7 +35,7 @@
   }
 }
 
-@mixin badge-pill($color: var(--accent-emerald), $bg: var(--accent-emerald-glow)) {
+@mixin badge-pill($color: var(--accent-emerald), $bg: var(--accent-emerald-subtle)) {
   display: inline-flex;
   align-items: center;
   gap: 6px;

@@ -8,19 +8,29 @@
   --bg-card-active: #1d362d;
   --bg-surface: #0e1a15;
 
-  // Accents
+  // Accents & Alpha Tints
   --accent-emerald: #10b981;
   --accent-emerald-light: #34d399;
   --accent-emerald-dark: #059669;
-  --accent-emerald-glow: rgba(16, 185, 129, 0.25);
+  --accent-emerald-subtle: rgba(16, 185, 129, 0.12);
+  --accent-emerald-border: rgba(16, 185, 129, 0.25);
+  --accent-emerald-glow: rgba(16, 185, 129, 0.35);
 
   --accent-gold: #f59e0b;
   --accent-gold-light: #fbbf24;
-  --accent-gold-glow: rgba(245, 158, 11, 0.25);
+  --accent-gold-subtle: rgba(245, 158, 11, 0.12);
+  --accent-gold-border: rgba(245, 158, 11, 0.25);
+  --accent-gold-glow: rgba(245, 158, 11, 0.35);
 
   --accent-cyan: #06b6d4;
   --accent-cyan-glow: rgba(6, 182, 212, 0.2);
   --accent-coral: #f43f5e;
+
+  // Surface Tints & Subdued Borders
+  --surface-white-subtle: rgba(255, 255, 255, 0.04);
+  --surface-white-hover: rgba(255, 255, 255, 0.08);
+  --border-white-subtle: rgba(255, 255, 255, 0.08);
+  --overlay-backdrop: rgba(0, 0, 0, 0.75);
 
   // Typography Colors
   --text-primary: #f0fdf4;
