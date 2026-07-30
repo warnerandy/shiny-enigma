@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "role": "Senior Software Engineer // Engineering Manager",
+    "company": "Hewlett Packard Enterprise (HPE)",
+    "period": "2024 — PRESENT",
+    "current": true,
+    "summary": "Architecting hybrid cloud infrastructure, enterprise multi-cloud orchestration, and self-service IT automation platforms for HPE GreenLake.",
+    "impact": [
+      {
+        "iconType": "zap",
+        "text": "Morpheus"
+      },
+      {
+        "iconType": "users",
+        "text": "Enterprise cloud orchestration"
+      },
+      {
+        "iconType": "trending",
+        "text": "Global infrastructure automation"
+      }
+    ],
+    "tech": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Docker",
+      "Java",
+      "Groovy"
+    ],
+    "details": [
+      "Serving as a Technical Lead for the HPE GreenLake team, guiding the architectural direction and development of enterprise hybrid cloud and multi-cloud automation platforms.",
+      "Architected an enterprise UI component library to meet corporate design standards and improve development efficiency.",
+      "Leading the engineering team through the post-acquisition integration of Morpheus Data into HPE's GreenLake portfolio, ensuring seamless transition and continued innovation.",
+      "Collaborating across cross-functional teams to design, develop, and deploy scalable, fault-tolerant cloud management solutions that meet the rigorous demands of enterprise customers worldwide."
+    ]
+  },
+  {
+    "id": 2,
+    "role": "Senior Software Engineer // Technical Lead",
+    "company": "Morpheus Data",
+    "period": "2017 — 2024",
+    "current": false,
+    "summary": "Engineered core cloud management platforms, multi-cloud automation engines, and real-time provisioning workflows that led to acquisition by HPE.",
+    "impact": [
+      {
+        "iconType": "award",
+        "text": "Acquired by HPE (2024)"
+      },
+      {
+        "iconType": "zap",
+        "text": "Multi-cloud automation engine"
+      },
+      {
+        "iconType": "trending",
+        "text": "Fortune 500 adoption"
+      }
+    ],
+    "tech": [
+      "React",
+      "Javascript",
+      "Groovy",
+      "MySQL",
+      "AWS",
+      "Azure",
+      "VMware",
+      "Docker"
+    ],
+    "details": [
+      "In charge of building and maintaining the Morpheus UI we application as well as the share site and marketing site.",
+      "Architected backend services, provider integrations, and rich client dashboards for Morpheus Data's infrastructure-agnostic cloud management platform.",
+      "Played a foundational engineering role scaling the platform from high-growth startup through its successful acquisition by Hewlett Packard Enterprise in August 2024."
+    ]
+  },
+  {
+    "id": 3,
+    "role": "Software Engineer // Full Stack Developer",
+    "company": "Bertram Labs (Bertram Capital)",
+    "period": "2015 — 2017",
+    "current": false,
+    "summary": "Developed internal software for Bertram Capital's portfolio companies.",
+    "impact": [
+      {
+        "iconType": "award",
+        "text": "Spun out as Morpheus Data"
+      },
+      {
+        "iconType": "zap",
+        "text": "Portfolio-wide IT automation"
+      }
+    ],
+    "tech": [
+      "Java",
+      "JavaScript",
+      "MySQL",
+      "Linux",
+      "Docker"
+    ],
+    "details": [
+      "Building and maintaining internal applications to solve complex IT challenges for portfolio companies."
+    ]
+  }
+]

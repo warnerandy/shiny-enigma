@@ -1,0 +1,235 @@
+// Employment.module.scss
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.section {
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.timelineContainer {
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto;
+  padding-left: 36px;
+
+  @include respond-to(mobile) {
+    padding-left: 24px;
+  }
+
+  // Glowing vertical timeline line
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 14px;
+    width: 3px;
+    background: linear-gradient(180deg, $accent-emerald 0%, $accent-gold 50%, rgba(16, 185, 129, 0.2) 100%);
+    border-radius: 3px;
+    box-shadow: 0 0 12px $accent-emerald;
+
+    @include respond-to(mobile) {
+      left: 10px;
+    }
+  }
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 44px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nodeIcon {
+  position: absolute;
+  left: -36px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: $bg-dark;
+  border: 2px solid $accent-emerald;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $accent-emerald;
+  z-index: 5;
+  transition: all $transition-bounce;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+
+  @include respond-to(mobile) {
+    left: -24px;
+    width: 26px;
+    height: 26px;
+  }
+
+  &.current {
+    border-color: $accent-gold;
+    color: $accent-gold;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.6);
+
+    .pulseRing {
+      position: absolute;
+      inset: -6px;
+      border: 1px solid $accent-gold;
+      border-radius: 50%;
+      animation: expandRing 2s infinite;
+    }
+  }
+}
+
+@keyframes expandRing {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.card {
+  @include glass-card;
+  padding: 28px 32px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+  @include respond-to(mobile) {
+    padding: 20px;
+  }
+
+  &:hover {
+    border-color: $accent-emerald;
+    
+    .cardHeader .roleTitle {
+      color: $accent-emerald-light;
+    }
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+
+  .roleTitle {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    transition: color $transition-fast;
+
+    @include respond-to(mobile) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .companyName {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $accent-gold;
+  }
+
+  .dateBadge {
+    @include badge-pill($accent-emerald, rgba(16, 185, 129, 0.12));
+    font-size: 0.78rem;
+  }
+}
+
+.missionSummary {
+  color: $text-secondary;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.impactGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.impactPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  font-family: $font-code;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: $accent-gold-light;
+
+  svg {
+    color: $accent-gold;
+  }
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 16px;
+
+  span {
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    color: $text-secondary;
+    font-family: $font-code;
+    font-size: 0.75rem;
+    transition: all $transition-fast;
+
+    &:hover {
+      background: rgba(16, 185, 129, 0.15);
+      color: $accent-emerald;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.expandPrompt {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: $accent-emerald;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 12px;
+  
+  svg {
+    transition: transform $transition-fast;
+  }
+}
+
+.detailsList {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(16, 185, 129, 0.15);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    position: relative;
+    padding-left: 20px;
+    color: $text-secondary;
+    font-size: 0.95rem;
+
+    &::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: $accent-emerald;
+      font-weight: 700;
+    }
+  }
+}

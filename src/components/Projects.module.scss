@@ -1,0 +1,182 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.projectsSection {
+  padding: 100px 0 120px;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+
+  .badge {
+    @include badge-pill($accent-emerald, rgba(16, 185, 129, 0.15));
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: $text-primary;
+    margin-bottom: 1rem;
+
+    span {
+      background: linear-gradient(135deg, $accent-emerald-light 0%, $accent-gold 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    color: $text-secondary;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+
+  .editableNotice {
+    display: inline-block;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: $accent-emerald;
+    font-size: 0.8rem;
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    font-family: $font-code;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.card {
+  @include glass-card;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $accent-emerald;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(16, 185, 129, 0.15);
+
+    .iconBox {
+      background: rgba(16, 185, 129, 0.2);
+      transform: scale(1.08) rotate(3deg);
+    }
+  }
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  .iconBox {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $accent-emerald-light;
+    flex-shrink: 0;
+    transition: all $transition-bounce;
+  }
+
+  .headerText {
+    flex: 1;
+
+    .badgePill {
+      @include badge-pill($accent-gold, rgba(245, 158, 11, 0.12));
+      font-size: 0.68rem;
+      padding: 2px 8px;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.3;
+    }
+  }
+}
+
+.summary {
+  color: $text-secondary;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.highlightsList {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  li {
+    font-size: 0.88rem;
+    color: $text-primary;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::before {
+      content: '⚡';
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  span {
+    font-family: $font-code;
+    font-size: 0.75rem;
+    padding: 3px 9px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: $accent-emerald-light;
+  }
+}

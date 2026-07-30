@@ -1,0 +1,67 @@
+// _mixins.scss - Reusable SCSS mixins for responsive design, glassmorphism, and animations
+@use 'variables' as *;
+
+@mixin glass-card($border-color: $glass-border) {
+  background: $glass-bg;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid $border-color;
+  border-radius: 16px;
+  box-shadow: $glass-shadow;
+  transition: all $transition-normal;
+
+  &:hover {
+    border-color: $glass-border-hover;
+    background: $glass-bg-light;
+    box-shadow: 0 12px 40px rgba(16, 185, 129, 0.15);
+    transform: translateY(-4px);
+  }
+}
+
+@mixin glow-effect($color: $accent-emerald-glow) {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: radial-gradient(circle at center, $color 0%, transparent 70%);
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity $transition-normal;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+@mixin badge-pill($color: $accent-emerald, $bg: rgba(16, 185, 129, 0.12)) {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-family: $font-code;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: $color;
+  background: $bg;
+  border: 1px solid rgba($color, 0.25);
+  transition: all $transition-fast;
+
+  &:hover {
+    background: rgba($color, 0.22);
+    border-color: rgba($color, 0.5);
+    transform: scale(1.03);
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $bp-mobile) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $bp-tablet) { @content; }
+  } @else if $breakpoint == desktop {
+    @media (max-width: $bp-desktop) { @content; }
+  }
+}

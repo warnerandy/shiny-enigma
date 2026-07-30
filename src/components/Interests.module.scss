@@ -1,0 +1,229 @@
+// Interests.module.scss
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.interestsSection,
+.section {
+  padding: 100px 0 140px;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 40px;
+
+  .badge {
+    @include badge-pill($accent-emerald, rgba(16, 185, 129, 0.15));
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: $text-primary;
+    margin-bottom: 1rem;
+
+    span {
+      background: linear-gradient(135deg, $accent-emerald-light 0%, $accent-gold 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    color: $text-secondary;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.card {
+  @include glass-card;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    border-color: $accent-gold;
+
+    .iconBox {
+      background: rgba(245, 158, 11, 0.2);
+      transform: scale(1.1) rotate(5deg);
+    }
+  }
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  .iconBox {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $accent-gold;
+    transition: all $transition-bounce;
+
+    svg {
+      width: 28px !important;
+      height: 28px !important;
+      min-width: 28px;
+      min-height: 28px;
+      max-width: 28px;
+      max-height: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+  }
+}
+
+.description {
+  color: $text-secondary;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.interestTag {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  span {
+    font-family: $font-code;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 50px;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    color: $accent-gold;
+    letter-spacing: 0.3px;
+    display: inline-block;
+  }
+}
+
+.interactiveArea {
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(10, 19, 16, 0.85);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+
+  .statRow {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .statLabel {
+      font-family: $font-code;
+      font-size: 0.75rem;
+      color: $text-muted;
+      letter-spacing: 0.5px;
+    }
+
+    .statValue {
+      font-family: $font-code;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: $accent-emerald-light;
+    }
+  }
+
+  .actionBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid $accent-emerald;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+
+    &:hover {
+      background: $accent-emerald;
+      color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .interactiveArea {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+
+    .actionBtn {
+      justify-content: center;
+    }
+  }
+}
+
+// Special flash effect for photography widget
+.flashOverlay {
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  
+  &.flashing {
+    opacity: 0.4;
+  }
+}

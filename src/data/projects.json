@@ -1,0 +1,70 @@
+[
+  {
+    "id": "botamus-prime",
+    "title": "Botamus Prime AI Messenger",
+    "category": "Gemini AI & Real-Time PWAs",
+    "badge": "GEMINI 1.5 PRO & OTP 27",
+    "summary": "Real-time AI messaging PWA connecting users to autonomous agent swarms over low-latency WebSocket channels.",
+    "highlights": [
+      "Sub-16ms WebSocket channel latency",
+      "Dynamic agentic prompt & context injection",
+      "Built with Elixir/Phoenix 1.8 & React Vite"
+    ],
+    "tech": [
+      "Elixir",
+      "Phoenix 1.8",
+      "React",
+      "Gemini API",
+      "WebSockets",
+      "Docker"
+    ],
+    "github": "#",
+    "demo": "#",
+    "iconType": "bot"
+  },
+  {
+    "id": "home-management-system",
+    "title": "Smart Home Management Hub",
+    "category": "IoT & Home Automation",
+    "badge": "SMART HOME & TELEMETRY",
+    "summary": "Full-stack home management platform and control dashboard for monitoring IoT telemetry, equipment maintenance, energy usage, and device automation.",
+    "highlights": [
+      "Real-time home device telemetry & energy metrics",
+      "Scheduled maintenance logs & home asset tracking",
+      "Interactive control dashboard & responsive layout"
+    ],
+    "tech": [
+      "React",
+      "Node.js",
+      "WebSockets",
+      "IoT Telemetry",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "github": "#",
+    "demo": "#",
+    "iconType": "home"
+  },
+  {
+    "id": "ai-telemetry-monitor",
+    "title": "AI Telemetry & Signal Monitor",
+    "category": "DevOps & Agentic Monitoring",
+    "badge": "SYSTEM TELEMETRY",
+    "summary": "Distributed monitoring worker and telemetry dashboard tracking agent performance metrics, response latencies, and process health.",
+    "highlights": [
+      "Real-time event stream processing",
+      "System health alerts & anomaly detection",
+      "Low-overhead background metrics collector"
+    ],
+    "tech": [
+      "Python",
+      "Node.js",
+      "Docker",
+      "PostgreSQL",
+      "WebSockets"
+    ],
+    "github": "#",
+    "demo": "#",
+    "iconType": "activity"
+  }
+]

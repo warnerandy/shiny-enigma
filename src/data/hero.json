@@ -1,0 +1,36 @@
+{
+  "statusBadgeText": "LIVE STATUS // AUSTIN, TX — FULL STACK ENGINEER & FRONTEND ARCHITECT",
+  "titlePrefix": "Andrew Warner — ",
+  "titleHighlight": "Full Stack Engineer",
+  "titleSuffix": " with a Frontend Focus.",
+  "subtitle": "Full Stack Engineer specializing in frontend craft—architecting beautiful, pixel-perfect, enterprise-grade web applications. Based in the Austin area, I bridge robust backend services with intuitive UI design systems and buttery-smooth user experiences.",
+  "tags": [
+    "FOCUS // FRONTEND ARCHITECT",
+    "CRAFT // ENTERPRISE APPS"
+  ],
+  "stats": [
+    {
+      "value": "12+",
+      "label": "Years Exp."
+    },
+    {
+      "value": "40+",
+      "label": "Systems Deployed"
+    },
+    {
+      "id": "coffee",
+      "value": 2410,
+      "label": "Cups of Espresso"
+    }
+  ],
+  "ctaButtons": {
+    "primary": {
+      "text": "Explore Skill Canopy",
+      "target": "#experience"
+    },
+    "secondary": {
+      "text": "Expedition Log (CV)",
+      "action": "openModal"
+    }
+  }
+}

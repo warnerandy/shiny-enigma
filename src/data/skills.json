@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Elixir, OTP & Phoenix Framework",
+    "category": "Backend & Systems",
+    "level": 50,
+    "badge": "LVL 50 // EXPERIENCED",
+    "note": "Architected real-time AI messaging platforms (like Botamus Prime) using Phoenix 1.8, Bandit, and OTP 27 supervision trees for fault-tolerant concurrency."
+  },
+  {
+    "id": 2,
+    "name": "React, Vite & Single-Page Apps",
+    "category": "Frontend & UI",
+    "level": 99,
+    "badge": "LVL 99 // MASTERED",
+    "note": "Built responsive mobile-first PWAs and complex frontend dashboards with React, custom hooks, and lightning-fast Vite build pipelines."
+  },
+  {
+    "id": 3,
+    "name": "TypeScript & JavaScript (ES6+)",
+    "category": "Core Languages",
+    "level": 99,
+    "badge": "LVL 99 // MASTERED",
+    "note": "Type-safety zealot. Crafted strict type definitions, full-stack SDKs, and modular architectures across frontend and Node/backend services."
+  },
+  {
+    "id": 4,
+    "name": "WebSockets & Real-Time Distributed Systems",
+    "category": "Architecture & Craft",
+    "level": 60,
+    "badge": "LVL 60 // EXPERIENCED",
+    "note": "Engineered sub-16ms bidirectional communication channels, BotChannels, and live telemetry sockets handling thousands of concurrent events."
+  },
+  {
+    "id": 5,
+    "name": "AI Agent Architectures & Local LLMs",
+    "category": "Architecture & Craft",
+    "level": 65,
+    "badge": "LVL 65 // EXPERIENCED",
+    "note": "Designed autonomous agent orchestration pipelines, WebSocket bot integrations, and custom prompt/tooling harnesses for real-time AI messaging."
+  },
+  {
+    "id": 6,
+    "name": "Tailwind CSS, SCSS & Vanilla CSS",
+    "category": "Frontend & UI",
+    "level": 95,
+    "badge": "LVL 95 // EXPERT",
+    "note": "Crafted bespoke design systems with glassmorphic tokens, responsive utility layouts, and buttery smooth micro-animations."
+  },
+  {
+    "id": 7,
+    "name": "PostgreSQL & Redis",
+    "category": "Backend & Systems",
+    "level": 70,
+    "badge": "LVL 70 // EXPERIENCED",
+    "note": "Built data-heavy backends using PostgreSQL, Ecto, and high-performance Redis caching layers."
+  },
+  {
+    "id": 8,
+    "name": "Docker, Playwright & CI/CD DevOps",
+    "category": "Cloud & DevOps",
+    "level": 91,
+    "badge": "LVL 91 // EXPERT",
+    "note": "Containerized multi-service stacks with Docker Compose and built automated end-to-end testing suites in Playwright."
+  },
+  {
+    "id": 9,
+    "name": "Node.js & Express / Microservices",
+    "category": "Backend & Systems",
+    "level": 92,
+    "badge": "LVL 92 // EXPERT",
+    "note": "Designed asynchronous APIs and microservice workers handling high-frequency requests and external webhooks."
+  },
+  {
+    "id": 10,
+    "name": "Python, Telemetry & Scripting",
+    "category": "Core Languages",
+    "level": 40,
+    "badge": "LVL 40 // CASUAL",
+    "note": "Wrote data ingestion workers, automation scripts, and custom tooling for system analytics and home telemetry."
+  },
+  {
+    "id": 11,
+    "name": "GraphQL & RESTful API Design",
+    "category": "Architecture & Craft",
+    "level": 72,
+    "badge": "LVL 72 // EXPERIENCED",
+    "note": "Built GraphQL APIs and REST endpoints with robust authentication and rate-limiting."
+  },
+  {
+    "id": 12,
+    "name": "System Design & Team Leadership",
+    "category": "Architecture & Craft",
+    "level": 95,
+    "badge": "LVL 95 // EXPERT",
+    "note": "Led technical roadmaps for distributed systems, mentoring engineers and establishing RFC architecture reviews across teams."
+  }
+]

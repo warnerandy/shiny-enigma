@@ -1,0 +1,42 @@
+{
+  "sectionId": "ai-philosophy",
+  "badge": "PERSPECTIVE // AI IN SOFTWARE ENGINEERING",
+  "title": "My Take on AI in Software Engineering",
+  "subtitle": "How AI is transforming our craft — from rapid full-stack synthesis to crafting beautiful, enterprise-grade interfaces.",
+  "quote": "AI accelerates full-stack engineering, freeing architects from boilerplate so we can focus on what matters most: creating beautiful, intuitive, and rock-solid enterprise applications.",
+  "principles": [
+    {
+      "id": 1,
+      "icon": "cpu",
+      "title": "Agentic Orchestration & Frontend Systems",
+      "description": "True AI leverage comes from structured agent workflows and tool calling—enabling full-stack engineers to build rich, real-time client interfaces and intuitive user flows faster than ever."
+    },
+    {
+      "id": 2,
+      "icon": "compass",
+      "title": "The Human-in-the-Loop Designer",
+      "description": "As code generation becomes instantaneous, frontend design excellence, accessibility, micro-animation polish, and user experience become the true differentiators for enterprise apps."
+    },
+    {
+      "id": 3,
+      "icon": "zap",
+      "title": "Real-Time UI & Low-Latency Streaming",
+      "description": "AI interfaces are evolving from static textboxes to real-time streaming canvases. Connecting live WebSocket feeds into responsive React frontends creates magical human-machine collaboration."
+    },
+    {
+      "id": 4,
+      "icon": "shield",
+      "title": "Enterprise-Grade Reliability & Polish",
+      "description": "AI accelerates creative exploration, but strict type systems, modular SCSS tokens, and automated testing harnesses ensure enterprise applications remain rock-solid in production."
+    }
+  ],
+  "interactivePrompt": {
+    "title": "Ask Andrew's AI Persona",
+    "placeholder": "Curious how I build beautiful enterprise applications with AI?",
+    "sampleAnswers": [
+      "I leverage full-stack AI workflows to rapidly prototype backend services while focusing heavy creative effort on crafting beautiful frontend interfaces.",
+      "In enterprise apps, I combine React, custom SCSS design systems, and a creative eye to deliver polished and intuitive user experiences.",
+      "The secret to enterprise-grade web apps is combining robust backend contracts with accessible, high-performance frontend engineering."
+    ]
+  }
+}

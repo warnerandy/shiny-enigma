@@ -1,0 +1,220 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.aiSection {
+  padding: 6rem 0;
+  position: relative;
+  background: linear-gradient(180deg, rgba(10, 19, 16, 0.4) 0%, rgba(16, 185, 129, 0.05) 50%, rgba(10, 19, 16, 0.4) 100%);
+  border-top: 1px solid rgba(16, 185, 129, 0.15);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  .badge {
+    @include badge-pill($accent-emerald, rgba(16, 185, 129, 0.15));
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: $text-primary;
+    margin-bottom: 1rem;
+
+    span {
+      background: linear-gradient(135deg, $accent-emerald-light 0%, $accent-gold 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    color: $text-secondary;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+
+  .editableNotice {
+    display: inline-block;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    color: $accent-gold;
+    font-size: 0.825rem;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-family: $font-code;
+  }
+}
+
+.manifestoCard {
+  @include glass-card;
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  border-color: rgba(16, 185, 129, 0.3);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(180deg, $accent-emerald 0%, $accent-gold 100%);
+  }
+
+  .quoteIcon {
+    color: rgba(16, 185, 129, 0.25);
+    margin-bottom: 1.5rem;
+  }
+
+  .quoteText {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-weight: 500;
+    color: $text-primary;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.15rem;
+    }
+  }
+
+  .quoteAuthor {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: $accent-emerald-light;
+    font-family: $font-code;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.principleCard {
+  @include glass-card;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 15px 30px rgba(16, 185, 129, 0.15);
+  }
+
+  .iconBox {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $accent-emerald-light;
+    margin-bottom: 1.25rem;
+  }
+
+  .principleTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 0.75rem;
+  }
+
+  .principleDesc {
+    font-size: 0.95rem;
+    color: $text-secondary;
+    line-height: 1.6;
+  }
+}
+
+.interactiveBox {
+  @include glass-card;
+  padding: 2.5rem;
+  text-align: center;
+  background: rgba(16, 185, 129, 0.04);
+  border: 1px dashed rgba(16, 185, 129, 0.4);
+
+  .boxTitle {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .answerCard {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 1.5rem auto;
+    max-width: 650px;
+    font-size: 1.05rem;
+    color: $accent-emerald-light;
+    font-family: $font-code;
+    line-height: 1.5;
+    animation: fadeIn 0.4s ease;
+  }
+
+  .askBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    background: $accent-emerald;
+    color: #000;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $accent-emerald-light;
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

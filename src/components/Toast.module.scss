@@ -1,0 +1,46 @@
+// Toast.module.scss
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.toastContainer {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 3000;
+  max-width: 420px;
+  pointer-events: none;
+
+  @include respond-to(mobile) {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    max-width: none;
+  }
+}
+
+.toast {
+  @include glass-card;
+  background: rgba(16, 30, 25, 0.94);
+  border-color: $accent-emerald;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 500;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(16, 185, 129, 0.3);
+  pointer-events: auto;
+  animation: slideIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}

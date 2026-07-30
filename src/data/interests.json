@@ -1,0 +1,38 @@
+[
+  {
+    "id": "soccer",
+    "title": "Soccer & Tournament Organizing",
+    "tag": "League Matches & Tournaments",
+    "description": "Playing competitive soccer and organizing local tournaments (like Back 2 The Pitch). Soccer builds teamwork, strategic positioning, and physical endurance."
+  },
+  {
+    "id": "referee",
+    "title": "Soccer Refereeing",
+    "tag": "Certified Match Official",
+    "description": "Officiating competitive soccer matches, exercising clear communication, conflict resolution, and quick decision-making under high-pressure conditions."
+  },
+  {
+    "id": "fencing",
+    "title": "Foil & Épée Fencing",
+    "tag": "Tactical Martial Arts",
+    "description": "Physical chess on the strip. Focusing on precision footwork, distance control, split-second parry-ripostes, and equipment tuning."
+  },
+  {
+    "id": "fishing",
+    "title": "Fly Fishing",
+    "tag": "Stream Craft & River Ecology",
+    "description": "Reading river currents, tying custom flies, and finding focus in wilderness streams after intensive software architecture sprints."
+  },
+  {
+    "id": "programming",
+    "title": "Creative Coding & AI Experiments",
+    "tag": "Open Source & Tinkering",
+    "description": "Building open-source tools, experimenting with local AI agents, exploring Elixir OTP concurrency, and crafting custom developer workflows."
+  },
+  {
+    "id": "woodworking",
+    "title": "Precision Woodworking",
+    "tag": "Hand Tools & Custom Joinery",
+    "description": "Transforming raw hardwood into functional furniture and custom workshop jigs, blending traditional hand-tool joinery with modern CAD planning."
+  }
+]

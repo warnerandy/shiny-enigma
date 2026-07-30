@@ -1,0 +1,223 @@
+// Experience.module.scss
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.section {
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.searchBox {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+
+  input {
+    width: 100%;
+    padding: 14px 20px 14px 48px;
+    border-radius: 9999px;
+    background: rgba(16, 30, 25, 0.7);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    color: $text-primary;
+    font-family: $font-body;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all $transition-normal;
+
+    &:focus {
+      border-color: $accent-emerald;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.25);
+      background: rgba(16, 30, 25, 0.9);
+    }
+
+    &::placeholder {
+      color: $text-muted;
+    }
+  }
+
+  .searchIcon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $accent-emerald;
+  }
+
+  .clearBtn {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: $text-secondary;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 4px;
+    &:hover { color: #fff; }
+  }
+}
+
+.filterTabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tabBtn {
+  padding: 10px 20px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: $text-secondary;
+  font-family: $font-code;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: $text-primary;
+  }
+
+  &.active {
+    background: rgba(16, 185, 129, 0.18);
+    border-color: $accent-emerald;
+    color: $accent-emerald;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+  }
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.skillCard {
+  @include glass-card;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    border-color: $accent-emerald;
+
+    .xpBarFill {
+      box-shadow: 0 0 12px $accent-emerald;
+    }
+
+    .cardHeader h3 {
+      color: $accent-emerald-light;
+    }
+  }
+
+  .cardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 14px;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      transition: color $transition-fast;
+      line-height: 1.35;
+    }
+
+    .categoryBadge {
+      @include badge-pill($accent-gold, rgba(245, 158, 11, 0.12));
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      white-space: nowrap;
+      display: inline-flex;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .explorerNote {
+    font-size: 0.92rem;
+    color: $text-secondary;
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+
+  .xpContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .xpHeader {
+      display: flex;
+      justify-content: space-between;
+      font-family: $font-code;
+      font-size: 0.78rem;
+
+      .xpLabel {
+        color: $text-muted;
+        white-space: nowrap;
+      }
+
+      .xpValue {
+        color: $accent-emerald;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+    }
+
+    .xpBarBg {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 9999px;
+      overflow: hidden;
+
+      .xpBarFill {
+        height: 100%;
+        background: linear-gradient(90deg, $accent-emerald-dark 0%, $accent-emerald 50%, $accent-gold 100%);
+        border-radius: 9999px;
+        transition: width 1s ease-out;
+      }
+    }
+  }
+}
+
+.noResults {
+  text-align: center;
+  padding: 60px 0;
+  color: $text-secondary;
+  font-size: 1.1rem;
+
+  button {
+    margin-top: 16px;
+    @include badge-pill($accent-emerald, rgba(16, 185, 129, 0.15));
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+}
