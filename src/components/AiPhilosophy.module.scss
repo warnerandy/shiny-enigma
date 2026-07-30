@@ -14,7 +14,7 @@
   margin-bottom: 4rem;
 
   .badge {
-    @include badge-pill($accent-emerald, rgba(16, 185, 129, 0.15));
+    @include badge-pill(var(--accent-emerald), rgba(16, 185, 129, 0.15));
     margin-bottom: 1rem;
     font-size: 0.75rem;
     letter-spacing: 2px;
@@ -23,11 +23,11 @@
   .title {
     font-size: 2.75rem;
     font-weight: 800;
-    color: $text-primary;
+    color: var(--text-primary);
     margin-bottom: 1rem;
 
     span {
-      background: linear-gradient(135deg, $accent-emerald-light 0%, $accent-gold 100%);
+      background: linear-gradient(135deg, var(--accent-emerald-light) 0%, var(--accent-gold) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -39,7 +39,7 @@
 
   .subtitle {
     font-size: 1.125rem;
-    color: $text-secondary;
+    color: var(--text-secondary);
     max-width: 700px;
     margin: 0 auto 1.5rem;
     line-height: 1.6;
@@ -49,11 +49,11 @@
     display: inline-block;
     background: rgba(245, 158, 11, 0.1);
     border: 1px solid rgba(245, 158, 11, 0.4);
-    color: $accent-gold;
+    color: var(--accent-gold);
     font-size: 0.825rem;
     padding: 0.4rem 1rem;
     border-radius: 50px;
-    font-family: $font-code;
+    font-family: var(--font-code);
   }
 }
 
@@ -73,7 +73,7 @@
     left: 0;
     width: 6px;
     height: 100%;
-    background: linear-gradient(180deg, $accent-emerald 0%, $accent-gold 100%);
+    background: linear-gradient(180deg, var(--accent-emerald) 0%, var(--accent-gold) 100%);
   }
 
   .quoteIcon {
@@ -85,7 +85,7 @@
     font-size: 1.4rem;
     line-height: 1.7;
     font-weight: 500;
-    color: $text-primary;
+    color: var(--text-primary);
     font-style: italic;
     margin-bottom: 1.5rem;
 
@@ -98,8 +98,8 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: $accent-emerald-light;
-    font-family: $font-code;
+    color: var(--accent-emerald-light);
+    font-family: var(--font-code);
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -154,14 +154,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: $accent-emerald-light;
+      color: var(--accent-emerald-light);
       margin-bottom: 0;
     }
 
     .principleTitle {
       font-size: 1.15rem;
       font-weight: 700;
-      color: $text-primary;
+      color: var(--text-primary);
       margin-bottom: 0;
       line-height: 1.35;
     }
@@ -169,7 +169,7 @@
 
   .principleDesc {
     font-size: 0.95rem;
-    color: $text-secondary;
+    color: var(--text-secondary);
     line-height: 1.6;
   }
 }
@@ -184,7 +184,7 @@
   .boxTitle {
     font-size: 1.35rem;
     font-weight: 700;
-    color: $text-primary;
+    color: var(--text-primary);
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -200,8 +200,8 @@
     margin: 1.5rem auto;
     max-width: 650px;
     font-size: 1.05rem;
-    color: $accent-emerald-light;
-    font-family: $font-code;
+    color: var(--accent-emerald-light);
+    font-family: var(--font-code);
     line-height: 1.5;
     animation: fadeIn 0.4s ease;
   }
@@ -213,7 +213,7 @@
     padding: 0.8rem 1.8rem;
     font-size: 0.95rem;
     margin-top: 0.5rem;
-    background: $accent-emerald;
+    background: var(--accent-emerald);
     color: #000;
     font-weight: 700;
     border-radius: 50px;
@@ -223,7 +223,7 @@
     transition: all 0.2s ease;
 
     &:hover {
-      background: $accent-emerald-light;
+      background: var(--accent-emerald-light);
       transform: translateY(-2px);
       box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
     }

@@ -21,7 +21,7 @@
 .toast {
   @include glass-card;
   background: rgba(16, 30, 25, 0.94);
-  border-color: $accent-emerald;
+  border-color: var(--accent-emerald);
   padding: 14px 20px;
   display: flex;
   align-items: center;

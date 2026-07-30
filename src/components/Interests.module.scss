@@ -16,7 +16,7 @@
   padding-top: 40px;
 
   .badge {
-    @include badge-pill($accent-emerald, rgba(16, 185, 129, 0.15));
+    @include badge-pill(var(--accent-emerald), rgba(16, 185, 129, 0.15));
     margin-bottom: 1rem;
     font-size: 0.75rem;
     letter-spacing: 2px;
@@ -25,11 +25,11 @@
   .title {
     font-size: 2.75rem;
     font-weight: 800;
-    color: $text-primary;
+    color: var(--text-primary);
     margin-bottom: 1rem;
 
     span {
-      background: linear-gradient(135deg, $accent-emerald-light 0%, $accent-gold 100%);
+      background: linear-gradient(135deg, var(--accent-emerald-light) 0%, var(--accent-gold) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -41,7 +41,7 @@
 
   .subtitle {
     font-size: 1.125rem;
-    color: $text-secondary;
+    color: var(--text-secondary);
     max-width: 700px;
     margin: 0 auto 1.5rem;
     line-height: 1.6;
@@ -73,7 +73,7 @@
   overflow: hidden;
 
   &:hover {
-    border-color: $accent-gold;
+    border-color: var(--accent-gold);
 
     .iconBox {
       background: rgba(245, 158, 11, 0.2);
@@ -98,7 +98,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $accent-gold;
+    color: var(--accent-gold);
     transition: all $transition-bounce;
 
     svg {
@@ -119,7 +119,7 @@
 }
 
 .description {
-  color: $text-secondary;
+  color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 16px;
@@ -131,13 +131,13 @@
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 
   span {
-    font-family: $font-code;
+    font-family: var(--font-code);
     font-size: 0.75rem;
     padding: 4px 10px;
     border-radius: 50px;
     background: rgba(245, 158, 11, 0.1);
     border: 1px solid rgba(245, 158, 11, 0.3);
-    color: $accent-gold;
+    color: var(--accent-gold);
     letter-spacing: 0.3px;
     display: inline-block;
   }
@@ -160,17 +160,17 @@
     gap: 4px;
 
     .statLabel {
-      font-family: $font-code;
+      font-family: var(--font-code);
       font-size: 0.75rem;
-      color: $text-muted;
+      color: var(--text-muted);
       letter-spacing: 0.5px;
     }
 
     .statValue {
-      font-family: $font-code;
+      font-family: var(--font-code);
       font-size: 1.15rem;
       font-weight: 700;
-      color: $accent-emerald-light;
+      color: var(--accent-emerald-light);
     }
   }
 
@@ -181,7 +181,7 @@
     padding: 8px 14px;
     border-radius: 8px;
     background: rgba(16, 185, 129, 0.15);
-    border: 1px solid $accent-emerald;
+    border: 1px solid var(--accent-emerald);
     color: #fff;
     font-size: 0.8rem;
     font-weight: 600;
@@ -190,7 +190,7 @@
     white-space: nowrap;
 
     &:hover {
-      background: $accent-emerald;
+      background: var(--accent-emerald);
       color: #000;
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);

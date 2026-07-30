@@ -27,20 +27,20 @@
     border-radius: 9999px;
     background: rgba(16, 30, 25, 0.7);
     border: 1px solid rgba(16, 185, 129, 0.25);
-    color: $text-primary;
-    font-family: $font-body;
+    color: var(--text-primary);
+    font-family: var(--font-body);
     font-size: 0.95rem;
     outline: none;
     transition: all $transition-normal;
 
     &:focus {
-      border-color: $accent-emerald;
+      border-color: var(--accent-emerald);
       box-shadow: 0 0 20px rgba(16, 185, 129, 0.25);
       background: rgba(16, 30, 25, 0.9);
     }
 
     &::placeholder {
-      color: $text-muted;
+      color: var(--text-muted);
     }
   }
 
@@ -49,7 +49,7 @@
     left: 18px;
     top: 50%;
     transform: translateY(-50%);
-    color: $accent-emerald;
+    color: var(--accent-emerald);
   }
 
   .clearBtn {
@@ -59,7 +59,7 @@
     transform: translateY(-50%);
     background: transparent;
     border: none;
-    color: $text-secondary;
+    color: var(--text-secondary);
     cursor: pointer;
     font-size: 0.8rem;
     padding: 4px;
@@ -79,8 +79,8 @@
   border-radius: 9999px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  color: $text-secondary;
-  font-family: $font-code;
+  color: var(--text-secondary);
+  font-family: var(--font-code);
   font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
@@ -88,13 +88,13 @@
 
   &:hover {
     background: rgba(255, 255, 255, 0.08);
-    color: $text-primary;
+    color: var(--text-primary);
   }
 
   &.active {
     background: rgba(16, 185, 129, 0.18);
-    border-color: $accent-emerald;
-    color: $accent-emerald;
+    border-color: var(--accent-emerald);
+    color: var(--accent-emerald);
     box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
   }
 }
@@ -125,14 +125,14 @@
   overflow: hidden;
 
   &:hover {
-    border-color: $accent-emerald;
+    border-color: var(--accent-emerald);
 
     .xpBarFill {
-      box-shadow: 0 0 12px $accent-emerald;
+      box-shadow: 0 0 12px var(--accent-emerald);
     }
 
     .cardHeader h3 {
-      color: $accent-emerald-light;
+      color: var(--accent-emerald-light);
     }
   }
 
@@ -152,7 +152,7 @@
     }
 
     .categoryBadge {
-      @include badge-pill($accent-gold, rgba(245, 158, 11, 0.12));
+      @include badge-pill(var(--accent-gold), rgba(245, 158, 11, 0.12));
       font-size: 0.75rem;
       padding: 4px 12px;
       white-space: nowrap;
@@ -163,7 +163,7 @@
 
   .explorerNote {
     font-size: 0.92rem;
-    color: $text-secondary;
+    color: var(--text-secondary);
     line-height: 1.55;
     margin-bottom: 20px;
   }
@@ -176,16 +176,16 @@
     .xpHeader {
       display: flex;
       justify-content: space-between;
-      font-family: $font-code;
+      font-family: var(--font-code);
       font-size: 0.78rem;
 
       .xpLabel {
-        color: $text-muted;
+        color: var(--text-muted);
         white-space: nowrap;
       }
 
       .xpValue {
-        color: $accent-emerald;
+        color: var(--accent-emerald);
         font-weight: 700;
         white-space: nowrap;
       }
@@ -200,7 +200,7 @@
 
       .xpBarFill {
         height: 100%;
-        background: linear-gradient(90deg, $accent-emerald-dark 0%, $accent-emerald 50%, $accent-gold 100%);
+        background: linear-gradient(90deg, var(--accent-emerald-dark) 0%, var(--accent-emerald) 50%, var(--accent-gold) 100%);
         border-radius: 9999px;
         transition: width 1s ease-out;
       }
@@ -211,12 +211,12 @@
 .noResults {
   text-align: center;
   padding: 60px 0;
-  color: $text-secondary;
+  color: var(--text-secondary);
   font-size: 1.1rem;
 
   button {
     margin-top: 16px;
-    @include badge-pill($accent-emerald, rgba(16, 185, 129, 0.15));
+    @include badge-pill(var(--accent-emerald), rgba(16, 185, 129, 0.15));
     cursor: pointer;
     font-size: 0.9rem;
   }

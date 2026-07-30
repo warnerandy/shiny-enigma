@@ -54,28 +54,28 @@
     height: 38px;
     padding: 0 6px;
     border-radius: 10px;
-    background: linear-gradient(135deg, $accent-emerald 0%, $accent-gold 100%);
+    background: linear-gradient(135deg, var(--accent-emerald) 0%, var(--accent-gold) 100%);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     color: #000;
     font-weight: 800;
     font-size: 1rem;
-    font-family: $font-code;
+    font-family: var(--font-code);
     white-space: nowrap;
     transition: all $transition-bounce;
     box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
   }
 
   .logoText {
-    font-family: $font-heading;
+    font-family: var(--font-heading);
     font-size: 1.25rem;
     font-weight: 800;
-    color: $text-primary;
+    color: var(--text-primary);
     letter-spacing: -0.02em;
 
     span {
-      color: $accent-emerald;
+      color: var(--accent-emerald);
       font-weight: 600;
     }
   }
@@ -92,10 +92,10 @@
   }
 
   a {
-    font-family: $font-heading;
+    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.95rem;
-    color: $text-secondary;
+    color: var(--text-secondary);
     text-decoration: none;
     transition: all $transition-fast;
     position: relative;
@@ -108,13 +108,13 @@
       left: 0;
       width: 0%;
       height: 2px;
-      background: $accent-emerald;
+      background: var(--accent-emerald);
       transition: width $transition-normal;
       border-radius: 2px;
     }
 
     &:hover {
-      color: $text-primary;
+      color: var(--text-primary);
 
       &::after {
         width: 100%;
@@ -135,9 +135,9 @@
   gap: 8px;
   padding: 10px 22px;
   border-radius: 9999px;
-  background: linear-gradient(135deg, $accent-emerald 0%, $accent-emerald-dark 100%);
+  background: linear-gradient(135deg, var(--accent-emerald) 0%, var(--accent-emerald-dark) 100%);
   color: #000;
-  font-family: $font-heading;
+  font-family: var(--font-heading);
   font-weight: 700;
   font-size: 0.95rem;
   border: none;
@@ -148,7 +148,7 @@
   &:hover {
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
-    background: linear-gradient(135deg, $accent-emerald-light 0%, $accent-emerald 100%);
+    background: linear-gradient(135deg, var(--accent-emerald-light) 0%, var(--accent-emerald) 100%);
   }
 
   &:active {

@@ -16,9 +16,9 @@ html {
 }
 
 body {
-  font-family: $font-body;
-  background-color: $bg-dark;
-  color: $text-primary;
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
@@ -71,12 +71,12 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: $bg-dark;
+  background: var(--bg-dark);
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(16, 185, 129, 0.3);
   border-radius: 5px;
-  border: 2px solid $bg-dark;
+  border: 2px solid var(--bg-dark);
   &:hover {
     background: rgba(16, 185, 129, 0.6);
   }
@@ -84,7 +84,7 @@ body {
 
 // Selection styling
 ::selection {
-  background: $accent-emerald;
+  background: var(--accent-emerald);
   color: #000;
 }
 
@@ -103,8 +103,8 @@ body {
 
 // Global heading styling
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-heading;
-  color: $text-primary;
+  font-family: var(--font-heading);
+  color: var(--text-primary);
   font-weight: 700;
   line-height: 1.25;
 }
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 
   .section-badge {
-    @include badge-pill($accent-emerald, rgba(16, 185, 129, 0.1));
+    @include badge-pill(var(--accent-emerald), rgba(16, 185, 129, 0.1));
     margin-bottom: 12px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   h2 {
     font-size: 2.75rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #ffffff 0%, $accent-emerald-light 100%);
+    background: linear-gradient(135deg, #ffffff 0%, var(--accent-emerald-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   p {
-    color: $text-secondary;
+    color: var(--text-secondary);
     font-size: 1.15rem;
     max-width: 620px;
     margin: 0 auto;

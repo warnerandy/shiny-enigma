@@ -28,11 +28,11 @@
     font-size: 1.25rem;
     font-weight: 800;
     color: #fff;
-    span { color: $accent-emerald; }
+    span { color: var(--accent-emerald); }
   }
 
   .tagline {
-    color: $text-secondary;
+    color: var(--text-secondary);
     font-size: 0.9rem;
     margin-top: 4px;
   }
@@ -46,8 +46,8 @@
   border-radius: 9999px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(16, 185, 129, 0.25);
-  color: $accent-emerald;
-  font-family: $font-code;
+  color: var(--accent-emerald);
+  font-family: var(--font-code);
   font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
@@ -55,7 +55,7 @@
 
   &:hover {
     background: rgba(16, 185, 129, 0.15);
-    border-color: $accent-emerald;
+    border-color: var(--accent-emerald);
     transform: translateY(-2px);
   }
 }
@@ -67,6 +67,6 @@
   padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   font-size: 0.82rem;
-  color: $text-muted;
-  font-family: $font-code;
+  color: var(--text-muted);
+  font-family: var(--font-code);
 }
