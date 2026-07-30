@@ -102,9 +102,9 @@ export default function Hero({ onOpenContact, onShowToast }) {
             <div className={styles.statLabel}>Systems Deployed</div>
           </div>
 
-          <div className={styles.statCard} onClick={() => onShowToast('⚡ High-availability production uptime and sub-second UI responsiveness.')}>
-            <div className={styles.statNumber}>99.9%</div>
-            <div className={styles.statLabel}>Production Reliability</div>
+          <div className={styles.statCard} onClick={() => onShowToast('⚡ React, TypeScript, SCSS, Node.js, Elixir/Phoenix, Docker, and SQL.')}>
+            <div className={styles.statNumber}>15+</div>
+            <div className={styles.statLabel}>Core Technologies</div>
           </div>
 
           <div className={styles.statCard} onClick={() => onShowToast('☕ Fueled by fresh espresso and clean software architecture.')}>

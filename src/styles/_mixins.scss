@@ -1,24 +1,24 @@
 // _mixins.scss - Reusable SCSS mixins for responsive design, glassmorphism, and animations
 @use 'variables' as *;
 
-@mixin glass-card($border-color: $glass-border) {
-  background: $glass-bg;
+@mixin glass-card($border-color: var(--glass-border)) {
+  background: var(--glass-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid $border-color;
   border-radius: 16px;
-  box-shadow: $glass-shadow;
+  box-shadow: var(--glass-shadow);
   transition: all $transition-normal;
 
   &:hover {
-    border-color: $glass-border-hover;
-    background: $glass-bg-light;
+    border-color: var(--glass-border-hover);
+    background: var(--glass-bg-light);
     box-shadow: 0 12px 40px rgba(16, 185, 129, 0.15);
     transform: translateY(-4px);
   }
 }
 
-@mixin glow-effect($color: $accent-emerald-glow) {
+@mixin glow-effect($color: var(--accent-emerald-glow)) {
   position: relative;
   &::after {
     content: '';
@@ -35,23 +35,23 @@
   }
 }
 
-@mixin badge-pill($color: $accent-emerald, $bg: rgba(16, 185, 129, 0.12)) {
+@mixin badge-pill($color: var(--accent-emerald), $bg: var(--accent-emerald-glow)) {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 5px 12px;
   border-radius: 9999px;
-  font-family: $font-code;
+  font-family: var(--font-code);
   font-size: 0.78rem;
   font-weight: 600;
   color: $color;
   background: $bg;
-  border: 1px solid rgba($color, 0.25);
+  border: 1px solid $color;
   transition: all $transition-fast;
 
   &:hover {
-    background: rgba($color, 0.22);
-    border-color: rgba($color, 0.5);
+    background: $bg;
+    border-color: $color;
     transform: scale(1.03);
   }
 }
