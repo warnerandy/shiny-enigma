@@ -45,9 +45,12 @@ export default function Projects({ onShowToast }) {
               <div className={styles.cardHeader}>
                 <div className={styles.iconBox}>{getIcon(project.iconType)}</div>
                 <div className={styles.headerText}>
-                  <span className={styles.badgePill}>{project.badge}</span>
                   <h3>{project.title}</h3>
                 </div>
+              </div>
+
+              <div className={styles.badgeRow}>
+                <span className={styles.badgePill}>{project.badge}</span>
               </div>
 
               <p className={styles.summary}>{project.summary}</p>

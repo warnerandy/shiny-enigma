@@ -9,15 +9,15 @@
     "impact": [
       {
         "iconType": "zap",
-        "text": "Morpheus"
+        "text": "Morpheus UI Platform"
       },
       {
         "iconType": "users",
-        "text": "Enterprise cloud orchestration"
+        "text": "Engineering Manager"
       },
       {
         "iconType": "trending",
-        "text": "Global infrastructure automation"
+        "text": "HPE GreenLake Ecosystem"
       }
     ],
     "tech": [
@@ -29,10 +29,10 @@
       "Groovy"
     ],
     "details": [
-      "Serving as a Technical Lead for the HPE GreenLake team, guiding the architectural direction and development of enterprise hybrid cloud and multi-cloud automation platforms.",
-      "Architected an enterprise UI component library to meet corporate design standards and improve development efficiency.",
-      "Leading the engineering team through the post-acquisition integration of Morpheus Data into HPE's GreenLake portfolio, ensuring seamless transition and continued innovation.",
-      "Collaborating across cross-functional teams to design, develop, and deploy scalable, fault-tolerant cloud management solutions that meet the rigorous demands of enterprise customers worldwide."
+      "Serving as a **Technical Lead** and **Engineering Manager** for the HPE Morpheus UI team, guiding the architectural direction and engineering execution of enterprise hybrid cloud and multi-cloud automation platforms.",
+      "Architected an enterprise **React UI component library** to meet corporate design standards, accelerate feature delivery, and improve cross-team frontend consistency.",
+      "Leading engineering teams through the post-acquisition integration of **Morpheus Data** into **HPE's GreenLake** portfolio, ensuring seamless platform transition and continued technical innovation.",
+      "Collaborating across cross-functional product management, UX, and backend teams to design, develop, and deploy scalable, fault-tolerant cloud management solutions worldwide."
     ]
   },
   {
@@ -49,16 +49,16 @@
       },
       {
         "iconType": "zap",
-        "text": "Multi-cloud automation engine"
+        "text": "Technical Lead"
       },
       {
         "iconType": "trending",
-        "text": "Fortune 500 adoption"
+        "text": "Fortune 500 Adoption"
       }
     ],
     "tech": [
       "React",
-      "Javascript",
+      "JavaScript",
       "Groovy",
       "MySQL",
       "AWS",
@@ -67,9 +67,9 @@
       "Docker"
     ],
     "details": [
-      "In charge of building and maintaining the Morpheus UI we application as well as the share site and marketing site.",
-      "Architected backend services, provider integrations, and rich client dashboards for Morpheus Data's infrastructure-agnostic cloud management platform.",
-      "Played a foundational engineering role scaling the platform from high-growth startup through its successful acquisition by Hewlett Packard Enterprise in August 2024."
+      "Served as **Technical Lead** in charge of building and maintaining the **Morpheus UI** web application, share site, and marketing site platforms.",
+      "Architected backend microservices, cloud provider integrations, and rich client dashboards for Morpheus Data's infrastructure-agnostic **Cloud Management Platform**.",
+      "Played a foundational engineering role scaling the platform from high-growth startup phase through its successful acquisition by **Hewlett Packard Enterprise** in August 2024."
     ]
   },
   {
@@ -86,7 +86,7 @@
       },
       {
         "iconType": "zap",
-        "text": "Portfolio-wide IT automation"
+        "text": "Full Stack Developer"
       }
     ],
     "tech": [
@@ -97,7 +97,7 @@
       "Docker"
     ],
     "details": [
-      "Building and maintaining internal applications to solve complex IT challenges for portfolio companies."
+      "Served as **Software Engineer / Full Stack Developer** building and maintaining internal enterprise web applications to solve complex IT challenges for portfolio companies."
     ]
   }
 ]

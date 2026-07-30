@@ -1,15 +1,8 @@
 // Hero.jsx - Stunning Hero section with interactive stats and explorer theme
 import React, { useState } from 'react';
 import styles from './Hero.module.scss';
-import { Compass, Download, ArrowRight, Coffee, ShieldCheck, Terminal, Award } from 'lucide-react';
+import { Compass, Download, ArrowRight, Coffee, ShieldCheck, Terminal, Award, Sparkles, Quote } from 'lucide-react';
 export default function Hero({ onOpenContact, onShowToast }) {
-  const [coffees, setCoffees] = useState(2410);
-
-  const handleCoffeeClick = () => {
-    setCoffees(prev => prev + 1);
-    onShowToast('☕ Fresh espresso brewed! Fueling Warner\'s next coding expedition.');
-  };
-
   const handleResumeDownload = (e) => {
     e.preventDefault();
     onShowToast('📋 Resume Expedition Log downloaded (Virtual Preview Active!)');
@@ -27,7 +20,7 @@ export default function Hero({ onOpenContact, onShowToast }) {
             </div>
 
             <h1 className={styles.title}>
-              Andrew Warner — <span className={styles.nameHighlight}>Full Stack Engineer</span> with a Frontend Focus.
+              Andy Warner — <span className={styles.nameHighlight}>Full Stack Engineer</span> with a Frontend Focus.
             </h1>
 
             <p className={styles.subtitle}>
@@ -36,14 +29,14 @@ export default function Hero({ onOpenContact, onShowToast }) {
 
             {/* Core Tech Stack Pills */}
             <div className={styles.techPillsRow}>
-              <span>React 19</span>
-              <span>Vite</span>
+              <span>JavaScript / Node.js</span>
+              <span>React / Next.js</span>
               <span>TypeScript</span>
               <span>SCSS / CSS3</span>
-              <span>Elixir & Phoenix</span>
-              <span>Node.js</span>
-              <span>PostgreSQL</span>
+              <span>Vite</span>
               <span>Docker</span>
+              <span>Elixir & Phoenix</span>
+              <span>PostgreSQL / MySQL</span>
             </div>
 
             <div className={styles.actions}>
@@ -64,7 +57,7 @@ export default function Hero({ onOpenContact, onShowToast }) {
             <div className={styles.avatarRing}>
               <img
                 src="/avatar.jpg"
-                alt="Andrew Warner Avatar"
+                alt="Andy Warner Avatar"
                 className={styles.avatarImage}
               />
             </div>
@@ -72,14 +65,28 @@ export default function Hero({ onOpenContact, onShowToast }) {
             {/* Floating Badge 1 */}
             <div className={`${styles.floatTag} ${styles.tagTop}`}>
               <Terminal size={16} />
-              <div>FOCUS // <span>FRONTEND ARCHITECTURE</span></div>
+              <div>FOCUS // <span>FRONTEND DEV</span></div>
             </div>
 
             {/* Floating Badge 2 */}
             <div className={`${styles.floatTag} ${styles.tagBottom}`}>
               <Compass size={16} />
-              <div>CRAFT // <span>ENTERPRISE APPS</span></div>
+              <div>SPECIALTY // <span>ENTERPRISE WEB APPS</span></div>
             </div>
+          </div>
+        </div>
+
+        {/* Full-Width Why I Program Manifesto Card */}
+        <div className={styles.whyManifestoCard}>
+          <div className={styles.quoteIcon}>
+            <Quote size={36} />
+          </div>
+          <blockquote className={styles.quoteText}>
+            "I program because I am passionate about complex problems and making beautiful solutions. Programming and front end development allow me to do this every day."
+          </blockquote>
+          <div className={styles.quoteAuthor}>
+            <Sparkles size={18} />
+            <span>ANDY WARNER // WHY I PROGRAM</span>
           </div>
         </div>
 
@@ -100,10 +107,9 @@ export default function Hero({ onOpenContact, onShowToast }) {
             <div className={styles.statLabel}>Production Reliability</div>
           </div>
 
-          <div className={styles.statCard} onClick={handleCoffeeClick} title="Click to brew another coffee!">
-            <div className={styles.statNumber}>{coffees.toLocaleString()}</div>
+          <div className={styles.statCard} onClick={() => onShowToast('☕ Fueled by fresh espresso and clean software architecture.')}>
+            <div className={styles.statNumber}>2,400+</div>
             <div className={styles.statLabel}>Cups of Espresso</div>
-            <div className={styles.coffeeHint}>+ Click to brew ☕</div>
           </div>
         </div>
       </div>

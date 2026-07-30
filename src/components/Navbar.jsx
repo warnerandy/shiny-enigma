@@ -1,8 +1,7 @@
-// Navbar.jsx - Sleek, glassmorphic navigation bar with interactive celebration features
+// Navbar.jsx - Sleek, glassmorphic navigation bar
 import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.scss';
-import { Compass, Sparkles, Send } from 'lucide-react';
-import confetti from 'canvas-confetti';
+import { Send } from 'lucide-react';
 
 export default function Navbar({ onOpenContact }) {
   const [scrolled, setScrolled] = useState(false);
@@ -15,32 +14,17 @@ export default function Navbar({ onOpenContact }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const triggerConfetti = () => {
-    confetti({
-      particleCount: 75,
-      spread: 70,
-      origin: { y: 0.1, x: 0.8 },
-      colors: ['#10b981', '#f59e0b', '#06b6d4', '#ffffff']
-    });
-  };
-
   const handleLogoClick = () => {
-    confetti({
-      particleCount: 50,
-      spread: 60,
-      origin: { y: 0.1, x: 0.2 },
-      colors: ['#10b981', '#fbbf24']
-    });
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.navContent}`}>
-        <button className={styles.logo} onClick={handleLogoClick} aria-label="Andrew Warner Logo - Scroll to top">
+        <button className={styles.logo} onClick={handleLogoClick} aria-label="Andy Warner Logo - Scroll to top">
           <div className={styles.logoIcon}>AW//</div>
           <div className={styles.logoText}>
-            ANDREW WARNER
+            ANDY WARNER
           </div>
         </button>
 
@@ -55,19 +39,11 @@ export default function Navbar({ onOpenContact }) {
 
         <div className={styles.navActions}>
           <button
-            className={styles.funButton}
-            onClick={triggerConfetti}
-            title="Celebrate Expedition (Confetti!)"
-            aria-label="Celebrate Expedition with Confetti"
-          >
-            <Sparkles size={20} />
-          </button>
-          <button
             className={styles.hireButton}
             onClick={onOpenContact}
           >
             <Send size={16} />
-            <span>Join Expedition</span>
+            <span>Get In Touch</span>
           </button>
         </div>
       </div>

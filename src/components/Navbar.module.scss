@@ -155,22 +155,3 @@
     transform: translateY(0) scale(0.98);
   }
 }
-
-.funButton {
-  background: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  color: $accent-gold;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all $transition-bounce;
-
-  &:hover {
-    background: rgba(245, 158, 11, 0.3);
-    transform: rotate(15deg) scale(1.1);
-  }
-}

@@ -8,14 +8,14 @@
     {
       "id": 1,
       "icon": "cpu",
-      "title": "Agentic Orchestration & Frontend Systems",
-      "description": "True AI leverage comes from structured agent workflows and tool calling—enabling full-stack engineers to build rich, real-time client interfaces and intuitive user flows faster than ever."
+      "title": "The Unstoppable Force",
+      "description": "AI isn't going away. Like the internet, this technology is fundamentally changing the way software is built. I believe a balance between AI-driven generation and human creativity is the key to unlocking the full potential of AI in software engineering."
     },
     {
       "id": 2,
       "icon": "compass",
       "title": "The Human-in-the-Loop Designer",
-      "description": "As code generation becomes instantaneous, frontend design excellence, accessibility, micro-animation polish, and user experience become the true differentiators for enterprise apps."
+      "description": "The days of spending hours hand-coding CSS animations are over. AI excels at executing the repetitive, low-level tasks that used to bog us down. This frees me up to focus on the truly human elements: crafting intuitive user flows, designing visually stunning interfaces, and ensuring accessibility for all users."
     },
     {
       "id": 3,
@@ -31,12 +31,12 @@
     }
   ],
   "interactivePrompt": {
-    "title": "Ask Andrew's AI Persona",
-    "placeholder": "Curious how I build beautiful enterprise applications with AI?",
+    "title": "Ask Andy's AI Persona",
+    "placeholder": "Curious how I leverage AI in my engineering process?",
     "sampleAnswers": [
       "I leverage full-stack AI workflows to rapidly prototype backend services while focusing heavy creative effort on crafting beautiful frontend interfaces.",
-      "In enterprise apps, I combine React, custom SCSS design systems, and a creative eye to deliver polished and intuitive user experiences.",
-      "The secret to enterprise-grade web apps is combining robust backend contracts with accessible, high-performance frontend engineering."
+      "I have seen a 3-5x increase in productivity using AI tools, but it is important to remember that AI is a tool, not a replacement for human creativity and critical thinking.",
+      "AI has enabled me to deliver enterprise-grade web apps by combining robust backend contracts with accessible, high-performance frontend engineering."
     ]
   }
 }

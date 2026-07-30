@@ -2,12 +2,12 @@
   {
     "id": "botamus-prime",
     "title": "Botamus Prime AI Messenger",
-    "category": "Gemini AI & Real-Time PWAs",
-    "badge": "GEMINI 1.5 PRO & OTP 27",
-    "summary": "Real-time AI messaging PWA connecting users to autonomous agent swarms over low-latency WebSocket channels.",
+    "category": "AI Agents & Real-Time PWAs",
+    "badge": "AI AGENTS & REAL-TIME PWAS",
+    "summary": "Botamus prime is my experiment in working to discover new ways to leverage AI in software engineering. It is a real-time messaging platform that connects users to autonomous AI agents over low-latency WebSocket channels. The idea being you can use this messaging app like a chat app on the go to work with your AI coding partner while you're away from your desk.",
     "highlights": [
-      "Sub-16ms WebSocket channel latency",
-      "Dynamic agentic prompt & context injection",
+      "Real time messaging with AI agents",
+      "Plugin archetecture, allows you to easily integrate your own AI agentic app to the platform",
       "Built with Elixir/Phoenix 1.8 & React Vite"
     ],
     "tech": [
@@ -27,11 +27,11 @@
     "title": "Smart Home Management Hub",
     "category": "IoT & Home Automation",
     "badge": "SMART HOME & TELEMETRY",
-    "summary": "Full-stack home management platform and control dashboard for monitoring IoT telemetry, equipment maintenance, energy usage, and device automation.",
+    "summary": "The home management app is designed to remind a home owner of the routine maintenance tasks that are required to keep a home running in top shape. Scaled out it would be an app to keep track of all of your appliances and enable users to track maintenance who worked on their appliance last.",
     "highlights": [
-      "Real-time home device telemetry & energy metrics",
-      "Scheduled maintenance logs & home asset tracking",
-      "Interactive control dashboard & responsive layout"
+      "Easy to use interface for setting up new appliances and maintenance schedules",
+      "View all of your appliances and their maintenance history in one place",
+      "Notifications and reminders to stay on top of home maintenance"
     ],
     "tech": [
       "React",
@@ -46,18 +46,18 @@
     "iconType": "home"
   },
   {
-    "id": "ai-telemetry-monitor",
-    "title": "AI Telemetry & Signal Monitor",
-    "category": "DevOps & Agentic Monitoring",
-    "badge": "SYSTEM TELEMETRY",
-    "summary": "Distributed monitoring worker and telemetry dashboard tracking agent performance metrics, response latencies, and process health.",
+    "id": "team-sports-app",
+    "title": "Team Sports app",
+    "category": "Sports & Social",
+    "badge": "SPORTS SOCIAL",
+    "summary": "A platform for managing sports teams and leagues. Keep track of schedules, scores, and player information. This is a work in progress.",
     "highlights": [
-      "Real-time event stream processing",
-      "System health alerts & anomaly detection",
-      "Low-overhead background metrics collector"
+      "Team and player management",
+      "Schedule and game tracking",
+      "Easy to use interface"
     ],
     "tech": [
-      "Python",
+      "React Native",
       "Node.js",
       "Docker",
       "PostgreSQL",

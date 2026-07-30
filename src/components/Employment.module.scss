@@ -223,6 +223,7 @@
     padding-left: 20px;
     color: $text-secondary;
     font-size: 0.95rem;
+    line-height: 1.65;
 
     &::before {
       content: '▸';
@@ -230,6 +231,19 @@
       left: 0;
       color: $accent-emerald;
       font-weight: 700;
+    }
+
+    .highlightTerm {
+      color: $accent-emerald-light;
+      font-weight: 700;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 1px 7px;
+      border-radius: 5px;
+      font-family: $font-code;
+      font-size: 0.85rem;
+      display: inline-block;
+      margin: 0 2px;
     }
   }
 }

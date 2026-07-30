@@ -45,17 +45,19 @@ export default function AiPhilosophy({ onShowToast }) {
           </blockquote>
           <div className={styles.quoteAuthor}>
             <Terminal size={18} />
-            <span>ANDREW WARNER // FIELD NOTES ON AI ARCHITECTURE</span>
+            <span>ANDY WARNER // FIELD NOTES ON AI ARCHITECTURE</span>
           </div>
         </div>
 
         <div className={styles.principlesGrid}>
           {aiData.principles.map((principle) => (
             <div key={principle.id} className={styles.principleCard}>
-              <div className={styles.iconBox}>
-                {iconsMap[principle.icon] || <Zap size={24} />}
+              <div className={styles.cardHeader}>
+                <div className={styles.iconBox}>
+                  {iconsMap[principle.icon] || <Zap size={24} />}
+                </div>
+                <h3 className={styles.principleTitle}>{principle.title}</h3>
               </div>
-              <h3 className={styles.principleTitle}>{principle.title}</h3>
               <p className={styles.principleDesc}>{principle.description}</p>
             </div>
           ))}

@@ -22,7 +22,7 @@ export default function Footer({ onShowToast }) {
         <div className={styles.content}>
           <div className={styles.brand}>
             <div className={styles.title}>
-              ANDREW WARNER <span>// FULL STACK & FRONTEND ARCHITECT</span>
+              ANDY WARNER <span>// FULL STACK & FRONTEND ARCHITECT</span>
             </div>
             <p className={styles.tagline}>
               Full Stack Engineer specializing in frontend craft — building beautiful, enterprise-grade applications.
@@ -36,7 +36,7 @@ export default function Footer({ onShowToast }) {
         </div>
 
         <div className={styles.copyright}>
-          © {new Date().getFullYear()} Andrew Warner. All rights reserved. • Designed & Built with React, Vite & SCSS • Adventure Awaits
+          © {new Date().getFullYear()} Andy Warner. All rights reserved. • Designed & Built with React, Vite & SCSS • Adventure Awaits
         </div>
       </div>
     </footer>

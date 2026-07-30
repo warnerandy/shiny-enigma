@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Elixir, OTP & Phoenix Framework",
-    "category": "Backend & Systems",
+    "category": "Core Languages",
     "level": 50,
     "badge": "LVL 50 // EXPERIENCED",
     "note": "Architected real-time AI messaging platforms (like Botamus Prime) using Phoenix 1.8, Bandit, and OTP 27 supervision trees for fault-tolerant concurrency."
@@ -49,23 +49,39 @@
   },
   {
     "id": 7,
-    "name": "PostgreSQL & Redis",
+    "name": "Databases & Message Brokers",
     "category": "Backend & Systems",
-    "level": 70,
-    "badge": "LVL 70 // EXPERIENCED",
-    "note": "Built data-heavy backends using PostgreSQL, Ecto, and high-performance Redis caching layers."
+    "level": 90,
+    "badge": "LVL 90 // EXPERT",
+    "note": "Architected data & messaging pipelines combining PostgreSQL & MySQL for relational persistence, Elasticsearch for fast log indexing & search, Redis for in-memory caching & session state, and RabbitMQ for reliable distributed event queuing."
   },
   {
     "id": 8,
-    "name": "Docker, Playwright & CI/CD DevOps",
+    "name": "Docker & Containerization",
     "category": "Cloud & DevOps",
-    "level": 91,
-    "badge": "LVL 91 // EXPERT",
-    "note": "Containerized multi-service stacks with Docker Compose and built automated end-to-end testing suites in Playwright."
+    "level": 92,
+    "badge": "LVL 92 // EXPERT",
+    "note": "Containerized multi-service full-stack applications with Docker, Docker Compose, and optimized multi-stage build images for production deployment."
+  },
+  {
+    "id": 15,
+    "name": "Playwright & E2E Test Automation",
+    "category": "Cloud & DevOps",
+    "level": 88,
+    "badge": "LVL 88 // EXPERT",
+    "note": "Engineered automated end-to-end regression testing suites in Playwright, ensuring rock-solid UI reliability and visual regression coverage across cross-browser environments."
+  },
+  {
+    "id": 16,
+    "name": "CI/CD Pipelines & Automated Release",
+    "category": "Cloud & DevOps",
+    "level": 90,
+    "badge": "LVL 90 // EXPERT",
+    "note": "Built automated continuous integration and deployment pipelines with GitHub Actions, automated release tagging, linting harnesses, and zero-downtime production releases."
   },
   {
     "id": 9,
-    "name": "Node.js & Express / Microservices",
+    "name": "Node.js & Microservices",
     "category": "Backend & Systems",
     "level": 92,
     "badge": "LVL 92 // EXPERT",
@@ -94,5 +110,21 @@
     "level": 95,
     "badge": "LVL 95 // EXPERT",
     "note": "Led technical roadmaps for distributed systems, mentoring engineers and establishing RFC architecture reviews across teams."
+  },
+  {
+    "id": 13,
+    "name": "Engineering Management",
+    "category": "Architecture & Craft",
+    "level": 70,
+    "badge": "LVL 70 // EXPERIENCED",
+    "note": "My philosophy in management is to empower my developers to do their best work through mentoring, encouragement, and valuing their humanity."
+  },
+  {
+    "id": 14,
+    "name": "Java & Groovy (Morpheus Core)",
+    "category": "Core Languages",
+    "level": 88,
+    "badge": "LVL 88 // EXPERT",
+    "note": "Extensive experience developing and scaling the core Morpheus Data platform backend written in Java and Groovy, building enterprise cloud orchestration services, plugin frameworks, and automated provisioning engines."
   }
 ]

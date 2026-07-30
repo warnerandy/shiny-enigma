@@ -13,7 +13,7 @@ export default function ContactModal({ isOpen, onClose, onShowToast }) {
   if (!isOpen) return null;
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('andrew@warner.dev');
+    navigator.clipboard.writeText('warner.andy@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
     confetti({
@@ -22,7 +22,7 @@ export default function ContactModal({ isOpen, onClose, onShowToast }) {
       origin: { y: 0.5 },
       colors: ['#10b981', '#f59e0b']
     });
-    onShowToast('📋 Copied andrew@warner.dev to clipboard!');
+    onShowToast('📋 Copied warner.andy@gmail.com to the clipboard!');
   };
 
   const handleSubmit = (e) => {
@@ -50,14 +50,14 @@ export default function ContactModal({ isOpen, onClose, onShowToast }) {
         <div className={styles.header}>
           <h3>Join the Expedition // Get In Touch</h3>
           <p>
-            Interested in hiring Warner for technical leadership, consulting, or full-time roles? Drop a message below or connect directly.
+            Interested in hiring Andy to build your next software project, or looking for a technical lead for your team? Drop a message below or connect directly.
           </p>
         </div>
 
         <div className={styles.quickContacts}>
           <button className={styles.contactOption} onClick={handleCopyEmail}>
             {copied ? <Check size={18} /> : <Mail size={18} />}
-            <span>{copied ? 'Copied Email!' : 'andrew@warner.dev'}</span>
+            <span>{copied ? 'Copied Email!' : 'warner.andy@gmail.com'}</span>
           </button>
 
           <a
@@ -95,7 +95,7 @@ export default function ContactModal({ isOpen, onClose, onShowToast }) {
           <label htmlFor="msg">MISSION MESSAGE</label>
           <textarea
             id="msg"
-            placeholder="Tell Warner about your team, project, or role..."
+            placeholder="Tell me about your team, project, or role..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required

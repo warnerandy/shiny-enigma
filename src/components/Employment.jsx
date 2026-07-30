@@ -21,6 +21,22 @@ const renderImpactIcon = (iconType) => {
   }
 };
 
+const parseFormattedText = (text) => {
+  if (!text) return text;
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      const content = part.slice(2, -2);
+      return (
+        <span key={index} className={styles.highlightTerm}>
+          {content}
+        </span>
+      );
+    }
+    return part;
+  });
+};
+
 export default function Employment({ onShowToast }) {
   const [expandedId, setExpandedId] = useState(1); // Default first one expanded
 
@@ -110,7 +126,7 @@ export default function Employment({ onShowToast }) {
                   {isExpanded && (
                     <ul className={styles.detailsList}>
                       {item.details.map((detail, idx) => (
-                        <li key={idx}>{detail}</li>
+                        <li key={idx}>{parseFormattedText(detail)}</li>
                       ))}
                     </ul>
                   )}

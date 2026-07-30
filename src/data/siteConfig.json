@@ -1,22 +1,22 @@
 {
   "brand": {
-    "name": "Andrew Warner",
+    "name": "Andy Warner",
     "shortName": "AW//",
-    "titleText": "ANDREW WARNER",
+    "titleText": "ANDY WARNER",
     "titleHighlight": "// EXPLORER",
-    "footerTitle": "ANDREW WARNER",
+    "footerTitle": "ANDY WARNER",
     "footerHighlight": "// TECH EXPLORER",
     "footerTagline": "Senior Software Engineer & AI Systems Architect — Bridging wilderness and code.",
-    "copyright": "© 2026 Andrew Warner. All rights reserved. • Designed & Built with React, Vite & SCSS • Adventure Awaits"
+    "copyright": "© 2026 Andy Warner. All rights reserved. • Designed & Built with React, Vite & SCSS • Adventure Awaits"
   },
   "contact": {
-    "email": "andrew@warner.dev",
+    "email": "andy@warner.dev",
     "linkedin": "https://www.linkedin.com/in/andrew-warner-36950746/",
     "github": "https://github.com",
     "location": "Austin / Liberty Hill, TX"
   },
   "seo": {
-    "title": "Andrew Warner | Senior Software Engineer & AI Systems Architect",
-    "description": "Interactive professional resume and portfolio for Andrew Warner - Senior Software Engineer, Elixir/OTP & React architect, and creative technologist based in Austin, TX."
+    "title": "Andy Warner | Senior Software Engineer & AI Systems Architect",
+    "description": "Interactive professional resume and portfolio for Andy Warner - Senior Software Engineer, Elixir/OTP & React architect, and creative technologist based in Austin, TX."
   }
 }

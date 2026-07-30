@@ -108,9 +108,18 @@
 
 .principlesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 3.5rem;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
 }
 
 .principleCard {
@@ -118,6 +127,9 @@
   padding: 2rem;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   &:hover {
     transform: translateY(-5px);
@@ -125,24 +137,34 @@
     box-shadow: 0 15px 30px rgba(16, 185, 129, 0.15);
   }
 
-  .iconBox {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.3);
+  .cardHeader {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: $accent-emerald-light;
+    gap: 1rem;
     margin-bottom: 1.25rem;
-  }
+    min-height: 56px;
 
-  .principleTitle {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: $text-primary;
-    margin-bottom: 0.75rem;
+    .iconBox {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $accent-emerald-light;
+      margin-bottom: 0;
+    }
+
+    .principleTitle {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: $text-primary;
+      margin-bottom: 0;
+      line-height: 1.35;
+    }
   }
 
   .principleDesc {
