@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './Interests.module.scss';
 import interestsData from '../data/interests.json';
-import { Terminal, Sparkles } from 'lucide-react';
+import { Terminal, Compass } from 'lucide-react';
 
 const SoccerBallIcon = ({ size = 28 }) => (
   <svg width={size} height={size} viewBox="0 0 256 256">
@@ -89,7 +89,7 @@ export default function Interests({ onShowToast }) {
       case 'woodworking':
         return <WoodworkingIcon size={28} />;
       default:
-        return <Sparkles size={28} />;
+        return <Compass size={28} />;
     }
   };
 

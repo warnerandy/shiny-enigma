@@ -47,14 +47,14 @@
   },
   {
     "id": "team-sports-app",
-    "title": "Team Sports app",
+    "title": "Team Sports App",
     "category": "Sports & Social",
-    "badge": "SPORTS SOCIAL",
-    "summary": "A platform for managing sports teams and leagues. Keep track of schedules, scores, and player information. This is a work in progress.",
+    "badge": "SPORTS SOCIAL PLATFORM",
+    "summary": "A comprehensive platform designed for organizing local sports leagues, pickup games, and team rosters. It streamlines game scheduling, live score tracking, player availability, and automated roster messaging—giving team captains and referees an effortless way to manage seasonal competitions and keep players engaged.",
     "highlights": [
-      "Team and player management",
-      "Schedule and game tracking",
-      "Easy to use interface"
+      "Real-time game schedules, live score updates, and standings",
+      "Captains & referee tools for player availability and team messaging",
+      "Cross-platform mobile & web interface built with React Native"
     ],
     "tech": [
       "React Native",

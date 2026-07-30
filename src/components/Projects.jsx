@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 import projectsData from '../data/projects.json';
-import { Bot, Code2, Activity, Home, Sparkles } from 'lucide-react';
+import { Bot, Code2, Activity, Home, FolderGit2 } from 'lucide-react';
 
 export default function Projects({ onShowToast }) {
   const getIcon = (iconType) => {
@@ -16,7 +16,7 @@ export default function Projects({ onShowToast }) {
       case 'home':
         return <Home size={26} />;
       default:
-        return <Sparkles size={26} />;
+        return <FolderGit2 size={26} />;
     }
   };
 

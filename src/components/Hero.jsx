@@ -1,7 +1,7 @@
 // Hero.jsx - Stunning Hero section with interactive stats and explorer theme
 import React, { useState } from 'react';
 import styles from './Hero.module.scss';
-import { Compass, Download, ArrowRight, Coffee, ShieldCheck, Terminal, Award, Sparkles, Quote } from 'lucide-react';
+import { Compass, Download, ArrowRight, Coffee, ShieldCheck, Terminal, Award, Quote } from 'lucide-react';
 export default function Hero({ onOpenContact, onShowToast }) {
   const handleResumeDownload = (e) => {
     e.preventDefault();
@@ -85,7 +85,7 @@ export default function Hero({ onOpenContact, onShowToast }) {
             "I program because I am passionate about complex problems and making beautiful solutions. Programming and front end development allow me to do this every day."
           </blockquote>
           <div className={styles.quoteAuthor}>
-            <Sparkles size={18} />
+            <Terminal size={18} />
             <span>ANDY WARNER // WHY I PROGRAM</span>
           </div>
         </div>

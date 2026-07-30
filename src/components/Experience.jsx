@@ -1,7 +1,7 @@
 // Experience.jsx - The Skill Canopy / Tech Radar with search, filter, and interactive XP bars
 import React, { useState } from 'react';
 import styles from './Experience.module.scss';
-import { Search, Sparkles, Terminal, Code, Database, Cpu, Cloud, Layers } from 'lucide-react';
+import { Search, Terminal, Code, Database, Cpu, Cloud, Layers } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 import skillsData from '../data/skills.json';
