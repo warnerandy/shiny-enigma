@@ -4,7 +4,7 @@ import aiData from '../data/aiPhilosophy.json';
 import { Cpu, Compass, Zap, Shield, Quote, Sparkles, Terminal } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
-export default function AiPhilosophy({ onShowToast }) {
+export default function AiPhilosophy() {
   const [answerIndex, setAnswerIndex] = useState(0);
   const [hasAsked, setHasAsked] = useState(false);
 
@@ -19,10 +19,6 @@ export default function AiPhilosophy({ onShowToast }) {
     const nextIdx = (answerIndex + 1) % aiData.interactivePrompt.sampleAnswers.length;
     setAnswerIndex(nextIdx);
     setHasAsked(true);
-
-    if (onShowToast) {
-      onShowToast('🤖 AI Persona synthesized a new response!');
-    }
   };
 
   return (
@@ -45,7 +41,7 @@ export default function AiPhilosophy({ onShowToast }) {
           </blockquote>
           <div className={styles.quoteAuthor}>
             <Terminal size={18} />
-            <span>ANDY WARNER // FIELD NOTES ON AI ARCHITECTURE</span>
+            <span>ANDY WARNER // AI IN SOFTWARE ENGINEERING</span>
           </div>
         </div>
 

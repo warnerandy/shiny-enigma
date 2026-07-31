@@ -19,7 +19,7 @@ const GitHubIcon = ({ size = 18 }) => (
   </svg>
 );
 
-export default function Hero({ onShowToast }) {
+export default function Hero() {
   return (
     <section className={styles.hero} id="about">
       <div className="container">
@@ -64,7 +64,6 @@ export default function Hero({ onShowToast }) {
                 className={styles.secondaryBtn}
               >
                 <LinkedInIcon size={18} />
-                <span>LinkedIn</span>
               </a>
 
               <a
@@ -72,7 +71,6 @@ export default function Hero({ onShowToast }) {
                 className={styles.secondaryBtn}
               >
                 <Mail size={18} />
-                <span>Email</span>
               </a>
 
               <a
@@ -82,7 +80,6 @@ export default function Hero({ onShowToast }) {
                 className={styles.secondaryBtn}
               >
                 <GitHubIcon size={18} />
-                <span>GitHub</span>
               </a>
             </div>
           </div>
@@ -127,22 +124,22 @@ export default function Hero({ onShowToast }) {
 
         {/* Interactive Performance & Career Stats Grid */}
         <div className={styles.statsGrid}>
-          <div className={styles.statCard} onClick={() => onShowToast('💻 Over 25 years of full-stack software development experience.')}>
+          <div className={styles.statCard}>
             <div className={styles.statNumber}>25+</div>
             <div className={styles.statLabel}>Years Writing Code</div>
           </div>
 
-          <div className={styles.statCard} onClick={() => onShowToast('🚀 Shipped enterprise cloud management, telemetry dashboards, & web apps.')}>
+          <div className={styles.statCard}>
             <div className={styles.statNumber}>40+</div>
             <div className={styles.statLabel}>Systems Deployed</div>
           </div>
 
-          <div className={styles.statCard} onClick={() => onShowToast('⚡ React, TypeScript, SCSS, Node.js, Elixir/Phoenix, Docker, and SQL.')}>
+          <div className={styles.statCard}>
             <div className={styles.statNumber}>15+</div>
             <div className={styles.statLabel}>Core Technologies</div>
           </div>
 
-          <div className={styles.statCard} onClick={() => onShowToast('☕ Fueled by fresh espresso and clean software architecture.')}>
+          <div className={styles.statCard}>
             <div className={styles.statNumber}>2,400+</div>
             <div className={styles.statLabel}>Cups of Espresso</div>
           </div>

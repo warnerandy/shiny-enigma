@@ -4,7 +4,7 @@
     "title": "Botamus Prime AI Messenger",
     "category": "AI Agents & Real-Time PWAs",
     "badge": "AI AGENTS & REAL-TIME PWAS",
-    "summary": "Botamus prime is my experiment in working to discover new ways to leverage AI in software engineering. It is a real-time messaging platform that connects users to autonomous AI agents over low-latency WebSocket channels. The idea being you can use this messaging app like a chat app on the go to work with your AI coding partner while you're away from your desk.",
+    "summary": "Botamus prime is my experiment in working to discover new ways to leverage AI in software engineering. Botamus Prime is a real-time messaging platform that connects users to their AI agents over low-latency WebSocket channels. The idea being you can use this messaging app like a chat app on the go to work with your AI coding partner while you're away from your desk.",
     "highlights": [
       "Real time messaging with AI agents",
       "Plugin archetecture, allows you to easily integrate your own AI agentic app to the platform",
@@ -27,7 +27,7 @@
     "title": "Smart Home Management Hub",
     "category": "IoT & Home Automation",
     "badge": "SMART HOME & TELEMETRY",
-    "summary": "The home management app is designed to remind a home owner of the routine maintenance tasks that are required to keep a home running in top shape. Scaled out it would be an app to keep track of all of your appliances and enable users to track maintenance who worked on their appliance last.",
+    "summary": "This home management app is designed to remind a home owner of the routine maintenance tasks that are required to keep a home running in top shape. Scaled out it would be an app to keep track of all of your appliances and enable users to track maintenance who worked on their appliance last.",
     "highlights": [
       "Easy to use interface for setting up new appliances and maintenance schedules",
       "View all of your appliances and their maintenance history in one place",
@@ -44,27 +44,5 @@
     "github": "#",
     "demo": "#",
     "iconType": "home"
-  },
-  {
-    "id": "team-sports-app",
-    "title": "Team Sports App",
-    "category": "Sports & Social",
-    "badge": "SPORTS SOCIAL PLATFORM",
-    "summary": "A comprehensive platform designed for organizing local sports leagues, pickup games, and team rosters. It streamlines game scheduling, live score tracking, player availability, and automated roster messaging—giving team captains and referees an effortless way to manage seasonal competitions and keep players engaged.",
-    "highlights": [
-      "Real-time game schedules, live score updates, and standings",
-      "Captains & referee tools for player availability and team messaging",
-      "Cross-platform mobile & web interface built with React Native"
-    ],
-    "tech": [
-      "React Native",
-      "Node.js",
-      "Docker",
-      "PostgreSQL",
-      "WebSockets"
-    ],
-    "github": "#",
-    "demo": "#",
-    "iconType": "activity"
   }
 ]

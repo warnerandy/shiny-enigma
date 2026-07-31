@@ -20,14 +20,14 @@
     {
       "id": 3,
       "icon": "zap",
-      "title": "Real-Time UI & Low-Latency Streaming",
-      "description": "AI interfaces are evolving from static textboxes to real-time streaming canvases. Connecting live WebSocket feeds into responsive React frontends creates magical human-machine collaboration."
+      "title": "Moving at the speed of imagination",
+      "description": "AI frees up developers to try new things. Where an idea might have once takend a month it may only take a day. This new paradigm allows for exploration of more radical ideas and rapid prototyping of different concepts. We need to be brave enough to explore the unknown while staying grounded in the fundamentals."
     },
     {
       "id": 4,
       "icon": "shield",
       "title": "Enterprise-Grade Reliability & Polish",
-      "description": "AI accelerates creative exploration, but strict type systems, modular SCSS tokens, and automated testing harnesses ensure enterprise applications remain rock-solid in production."
+      "description": "While AI allows us to explore our ideas, it also allows us to harden our applications through rapid test building and expanded coverage and documentation."
     }
   ],
   "interactivePrompt": {

@@ -3,36 +3,36 @@
     "id": "soccer",
     "title": "Soccer & Tournament Organizing",
     "tag": "League Matches & Tournaments",
-    "description": "Playing competitive soccer and organizing local tournaments (like Back 2 The Pitch). Soccer builds teamwork, strategic positioning, and physical endurance."
+    "description": "Playing soccer and being active in my local soccer association allows me to stay active and connected with my community. Soccer builds teamwork, strategic positioning, and physical endurance."
   },
   {
     "id": "referee",
     "title": "Soccer Refereeing",
-    "tag": "Certified Match Official",
+    "tag": "Certified USSF Referee",
     "description": "Officiating competitive soccer matches, exercising clear communication, conflict resolution, and quick decision-making under high-pressure conditions."
   },
   {
     "id": "fencing",
     "title": "Foil & Épée Fencing",
-    "tag": "Tactical Martial Arts",
-    "description": "Physical chess on the strip. Focusing on precision footwork, distance control, split-second parry-ripostes, and equipment tuning."
+    "tag": "Chess at 100 MPH",
+    "description": "Physical chess on the strip. Focusing on precision footwork, split second decision making, quick reflexes, fencing is the marriage between a sharp mind and able body."
   },
   {
     "id": "fishing",
     "title": "Fly Fishing",
-    "tag": "Stream Craft & River Ecology",
-    "description": "Reading river currents and finding focus in wilderness streams after intensive software architecture sprints."
+    "tag": "Unplugging by the River",
+    "description": "We all need to unplug. Being in nature, on the water with a pole in hand is one of the most rewarding and peaceful experiences I can think of."
   },
   {
     "id": "programming",
     "title": "Creative Coding & AI Experiments",
     "tag": "Open Source & Tinkering",
-    "description": "Building open-source tools, experimenting with local AI agents, exploring Elixir OTP concurrency, and crafting custom developer workflows."
+    "description": "I love to build, tinker, and experiment with new technologies. I'll get an idea and have to explore it. Whether I build an app or just a script I always learn something"
   },
   {
     "id": "woodworking",
     "title": "Precision Woodworking",
     "tag": "Hand Tools & Custom Joinery",
-    "description": "Transforming raw hardwood into functional furniture and custom workshop jigs, blending traditional hand-tool joinery with modern CAD planning."
+    "description": "There is something satisfying about taking a rough piece of wood and turning it into something beautiful and functional."
   }
 ]

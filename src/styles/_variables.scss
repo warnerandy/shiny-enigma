@@ -1,29 +1,35 @@
 // _variables.scss - Design system CSS Custom Properties & SASS Breakpoints
 
 :root {
+  // RGB Channels (allows using rgba(var(--channel), opacity) for custom transparent variants)
+  --bg-dark-rgb: 10, 19, 16;
+  --accent-emerald-rgb: 16, 185, 129;
+  --accent-gold-rgb: 245, 158, 11;
+  --accent-cyan-rgb: 6, 182, 212;
+
   // Theme: Deep Forest Dark Mode Colors
-  --bg-dark: #0a1310;
+  --bg-dark: rgb(var(--bg-dark-rgb));
   --bg-card: #101e19;
   --bg-card-hover: #162a23;
   --bg-card-active: #1d362d;
   --bg-surface: #0e1a15;
 
   // Accents & Alpha Tints
-  --accent-emerald: #10b981;
+  --accent-emerald: rgb(var(--accent-emerald-rgb));
   --accent-emerald-light: #34d399;
   --accent-emerald-dark: #059669;
-  --accent-emerald-subtle: rgba(16, 185, 129, 0.12);
-  --accent-emerald-border: rgba(16, 185, 129, 0.25);
-  --accent-emerald-glow: rgba(16, 185, 129, 0.35);
+  --accent-emerald-subtle: rgba(var(--accent-emerald-rgb), 0.12);
+  --accent-emerald-border: rgba(var(--accent-emerald-rgb), 0.25);
+  --accent-emerald-glow: rgba(var(--accent-emerald-rgb), 0.35);
 
-  --accent-gold: #f59e0b;
+  --accent-gold: rgb(var(--accent-gold-rgb));
   --accent-gold-light: #fbbf24;
-  --accent-gold-subtle: rgba(245, 158, 11, 0.12);
-  --accent-gold-border: rgba(245, 158, 11, 0.25);
-  --accent-gold-glow: rgba(245, 158, 11, 0.35);
+  --accent-gold-subtle: rgba(var(--accent-gold-rgb), 0.12);
+  --accent-gold-border: rgba(var(--accent-gold-rgb), 0.25);
+  --accent-gold-glow: rgba(var(--accent-gold-rgb), 0.35);
 
-  --accent-cyan: #06b6d4;
-  --accent-cyan-glow: rgba(6, 182, 212, 0.2);
+  --accent-cyan: rgb(var(--accent-cyan-rgb));
+  --accent-cyan-glow: rgba(var(--accent-cyan-rgb), 0.2);
   --accent-coral: #f43f5e;
 
   // Surface Tints & Subdued Borders

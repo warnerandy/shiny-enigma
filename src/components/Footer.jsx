@@ -4,7 +4,7 @@ import styles from './Footer.module.scss';
 import { ArrowUp } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
-export default function Footer({ onShowToast }) {
+export default function Footer() {
   const handleScrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     confetti({
@@ -13,7 +13,6 @@ export default function Footer({ onShowToast }) {
       origin: { y: 0.9 },
       colors: ['#10b981', '#f59e0b']
     });
-    onShowToast('🚀 Returned to Expedition basecamp (Top of page)');
   };
 
   return (
@@ -22,15 +21,15 @@ export default function Footer({ onShowToast }) {
         <div className={styles.content}>
           <div className={styles.brand}>
             <div className={styles.title}>
-              ANDY WARNER <span>// FULL STACK & FRONTEND ARCHITECT</span>
+              ANDY WARNER <span>// FULL STACK ENGINEER & FRONTEND SPECIALIST</span>
             </div>
             <p className={styles.tagline}>
-              Full Stack Engineer specializing in frontend craft — building beautiful, enterprise-grade applications.
+              Full Stack Engineer specializing in frontend web applications — building beautiful, enterprise-grade applications.
             </p>
           </div>
 
           <button className={styles.backTop} onClick={handleScrollTop}>
-            <span>Back To Basecamp</span>
+            <span>Back To Top</span>
             <ArrowUp size={16} />
           </button>
         </div>

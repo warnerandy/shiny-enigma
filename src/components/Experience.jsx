@@ -15,7 +15,7 @@ const CATEGORIES = [
   'Core Languages'
 ];
 
-export default function Experience({ onShowToast }) {
+export default function Experience() {
   const [activeTab, setActiveTab] = useState('All Skills');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -28,10 +28,6 @@ export default function Experience({ onShowToast }) {
       return matchesCategory && matchesSearch;
     })
     .sort((a, b) => b.level - a.level);
-
-  const handleCardClick = (skill) => {
-    onShowToast(`🌿 Explorer's Note (${skill.name}): ${skill.note}`);
-  };
 
   return (
     <section className={styles.section} id="experience">
@@ -82,8 +78,6 @@ export default function Experience({ onShowToast }) {
               <div
                 key={skill.id}
                 className={styles.skillCard}
-                onClick={() => handleCardClick(skill)}
-                title="Click to view full Explorer's Note"
               >
                 <div>
                   <div className={styles.cardHeader}>

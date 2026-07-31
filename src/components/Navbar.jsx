@@ -62,7 +62,6 @@ export default function Navbar() {
             aria-label="LinkedIn Profile"
           >
             <LinkedInIcon size={16} />
-            <span>LinkedIn</span>
           </a>
 
           <a
@@ -71,7 +70,6 @@ export default function Navbar() {
             aria-label="Send Email"
           >
             <Mail size={16} />
-            <span>Email</span>
           </a>
 
           <a
@@ -82,7 +80,6 @@ export default function Navbar() {
             aria-label="GitHub Profile"
           >
             <GitHubIcon size={16} />
-            <span>GitHub</span>
           </a>
         </div>
       </div>

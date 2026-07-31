@@ -4,7 +4,7 @@ import styles from './Projects.module.scss';
 import projectsData from '../data/projects.json';
 import { Bot, Code2, Activity, Home, FolderGit2 } from 'lucide-react';
 
-export default function Projects({ onShowToast }) {
+export default function Projects() {
   const getIcon = (iconType) => {
     switch (iconType) {
       case 'bot':
@@ -17,12 +17,6 @@ export default function Projects({ onShowToast }) {
         return <Home size={26} />;
       default:
         return <FolderGit2 size={26} />;
-    }
-  };
-
-  const handleTechClick = (tech) => {
-    if (onShowToast) {
-      onShowToast(`⚡ Project Stack: ${tech}`);
     }
   };
 
@@ -63,7 +57,7 @@ export default function Projects({ onShowToast }) {
 
               <div className={styles.techTags}>
                 {project.tech.map((t, idx) => (
-                  <span key={idx} onClick={() => handleTechClick(t)}>
+                  <span key={idx}>
                     {t}
                   </span>
                 ))}

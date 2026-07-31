@@ -24,14 +24,6 @@
     "note": "Type-safety zealot. Crafted strict type definitions, full-stack SDKs, and modular architectures across frontend and Node/backend services."
   },
   {
-    "id": 4,
-    "name": "WebSockets & Real-Time Distributed Systems",
-    "category": "Architecture & Craft",
-    "level": 60,
-    "badge": "LVL 60 // EXPERIENCED",
-    "note": "Engineered sub-16ms bidirectional communication channels, BotChannels, and live telemetry sockets handling thousands of concurrent events."
-  },
-  {
     "id": 5,
     "name": "AI Agent Architectures & Local LLMs",
     "category": "Architecture & Craft",
@@ -45,7 +37,7 @@
     "category": "Frontend & UI",
     "level": 95,
     "badge": "LVL 95 // EXPERT",
-    "note": "Crafted bespoke design systems with glassmorphic tokens, responsive utility layouts, and buttery smooth micro-animations."
+    "note": "Crafted pixel perfect layouts, custom design systems and themes, and buttery smooth micro-animations."
   },
   {
     "id": 7,
@@ -105,11 +97,11 @@
   },
   {
     "id": 12,
-    "name": "System Design & Team Leadership",
+    "name": "System Design",
     "category": "Architecture & Craft",
     "level": 95,
     "badge": "LVL 95 // EXPERT",
-    "note": "Led technical roadmaps for distributed systems, mentoring engineers and establishing RFC architecture reviews across teams."
+    "note": "Solved difficult problems with well thoughtout solutions designed not only for todays issues but for tomorrows as well"
   },
   {
     "id": 13,
@@ -121,7 +113,7 @@
   },
   {
     "id": 14,
-    "name": "Java & Groovy (Morpheus Core)",
+    "name": "Java & Groovy",
     "category": "Core Languages",
     "level": 88,
     "badge": "LVL 88 // EXPERT",

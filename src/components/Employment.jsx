@@ -37,19 +37,11 @@ const parseFormattedText = (text) => {
   });
 };
 
-export default function Employment({ onShowToast }) {
+export default function Employment() {
   const [expandedId, setExpandedId] = useState(1); // Default first one expanded
 
   const toggleExpand = (id, role) => {
     setExpandedId(prev => (prev === id ? null : id));
-    if (expandedId !== id) {
-      onShowToast(`📜 Expanding expedition log: ${role}`);
-    }
-  };
-
-  const handleTechClick = (e, tech) => {
-    e.stopPropagation();
-    onShowToast(`⚡ Tech Stack Badge: ${tech} — Click Skills section above to filter by this skill!`);
   };
 
   return (
@@ -59,7 +51,7 @@ export default function Employment({ onShowToast }) {
           <div className="section-badge">CAREER HISTORY // EMPLOYMENT TIMELINE</div>
           <h2>Professional Employment History</h2>
           <p>
-            A chronological breakdown of full-stack engineering leadership, frontend architecture, and enterprise product impact.
+            We all have story, for me it involves a lot of hard work, determination, and a passion for building great products.
           </p>
         </div>
 
@@ -102,7 +94,7 @@ export default function Employment({ onShowToast }) {
                   {/* Tech Tags */}
                   <div className={styles.techTags}>
                     {item.tech.map((t, idx) => (
-                      <span key={idx} onClick={(e) => handleTechClick(e, t)}>
+                      <span key={idx}>
                         {t}
                       </span>
                     ))}
