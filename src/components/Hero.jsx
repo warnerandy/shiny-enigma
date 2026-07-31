@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './Hero.module.scss';
 import { ArrowRight, Terminal, Compass, Quote, Mail } from 'lucide-react';
 import siteConfig from '../data/siteConfig.json';
+import avatarImg from '../assets/avatar.jpg';
 
 const LinkedInIcon = ({ size = 18 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -88,7 +89,7 @@ export default function Hero() {
           <div className={styles.avatarWrapper}>
             <div className={styles.avatarRing}>
               <img
-                src="/avatar.jpg"
+                src={avatarImg}
                 alt="Andy Warner Avatar"
                 className={styles.avatarImage}
               />
