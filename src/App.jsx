@@ -7,12 +7,10 @@ import Employment from './components/Employment';
 import AiPhilosophy from './components/AiPhilosophy';
 import Interests from './components/Interests';
 import Projects from './components/Projects';
-import ContactModal from './components/ContactModal';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
 
 export default function App() {
-  const [isContactOpen, setIsContactOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState(null);
 
   const showToast = (message) => {
@@ -30,13 +28,10 @@ export default function App() {
 
   return (
     <div className="app-wrapper">
-      <Navbar onOpenContact={() => setIsContactOpen(true)} />
+      <Navbar />
       
       <main>
-        <Hero
-          onOpenContact={() => setIsContactOpen(true)}
-          onShowToast={showToast}
-        />
+        <Hero onShowToast={showToast} />
 
         <Experience onShowToast={showToast} />
 
@@ -50,12 +45,6 @@ export default function App() {
       </main>
 
       <Footer onShowToast={showToast} />
-
-      <ContactModal
-        isOpen={isContactOpen}
-        onClose={() => setIsContactOpen(false)}
-        onShowToast={showToast}
-      />
 
       <Toast message={toastMessage} />
     </div>

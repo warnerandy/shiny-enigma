@@ -84,8 +84,12 @@
 .navLinks {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
   list-style: none;
+
+  @include respond-to(desktop) {
+    gap: 16px;
+  }
 
   @include respond-to(tablet) {
     display: none;
@@ -94,7 +98,7 @@
   a {
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     color: var(--text-secondary);
     text-decoration: none;
     transition: all $transition-fast;
@@ -126,32 +130,42 @@
 .navActions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
+
+  @include respond-to(mobile) {
+    gap: 6px;
+  }
 }
 
-.hireButton {
+.socialButton {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 22px;
+  gap: 6px;
+  padding: 8px 16px;
   border-radius: 9999px;
-  background: linear-gradient(135deg, var(--accent-emerald) 0%, var(--accent-emerald-dark) 100%);
-  color: #000;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.95rem;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
-  transition: all $transition-bounce;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all $transition-fast;
 
   &:hover {
-    transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
-    background: linear-gradient(135deg, var(--accent-emerald-light) 0%, var(--accent-emerald) 100%);
+    background: rgba(16, 185, 129, 0.15);
+    border-color: var(--accent-emerald);
+    color: var(--accent-emerald-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
   }
 
-  &:active {
-    transform: translateY(0) scale(0.98);
+  @include respond-to(mobile) {
+    padding: 8px 10px;
+    font-size: 0.78rem;
+
+    span {
+      display: none;
+    }
   }
 }
