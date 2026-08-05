@@ -130,20 +130,11 @@
     }
   }
 
-  .cardHeader {
-    display: flex;
+  .skillCardHeader {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
     margin-bottom: 14px;
-
-    h3 {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: #fff;
-      transition: color $transition-fast;
-      line-height: 1.35;
-    }
   }
 
   .explorerNote {

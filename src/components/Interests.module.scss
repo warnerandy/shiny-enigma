@@ -68,46 +68,10 @@
   &:hover {
     border-color: var(--accent-gold);
 
-    .iconBox {
+    .interestIcon {
       background: rgba(245, 158, 11, 0.2);
       transform: scale(1.1) rotate(5deg);
     }
-  }
-}
-
-.cardHeader {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 16px;
-
-  .iconBox {
-    width: 52px;
-    height: 52px;
-    flex-shrink: 0;
-    border-radius: 14px;
-    background: rgba(245, 158, 11, 0.12);
-    border: 1px solid rgba(245, 158, 11, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent-gold);
-    transition: all $transition-bounce;
-
-    svg {
-      width: 28px !important;
-      height: 28px !important;
-      min-width: 28px;
-      min-height: 28px;
-      max-width: 28px;
-      max-height: 28px;
-    }
-  }
-
-  h3 {
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: #fff;
   }
 }
 

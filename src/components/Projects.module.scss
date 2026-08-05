@@ -79,41 +79,9 @@
   &:hover {
     border-color: var(--accent-emerald);
 
-    .iconBox {
+    .projectIcon {
       background: rgba(16, 185, 129, 0.2);
       transform: scale(1.08) rotate(3deg);
-    }
-  }
-}
-
-.cardHeader {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 12px;
-
-  .iconBox {
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
-    background: rgba(16, 185, 129, 0.12);
-    border: 1px solid rgba(16, 185, 129, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent-emerald-light);
-    flex-shrink: 0;
-    transition: all $transition-bounce;
-  }
-
-  .headerText {
-    flex: 1;
-
-    h3 {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: #fff;
-      line-height: 1.3;
     }
   }
 }

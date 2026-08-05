@@ -5,8 +5,26 @@ import { Briefcase, ChevronDown, ChevronUp, Award, TrendingUp, Users, Zap } from
 import confetti from 'canvas-confetti';
 import Badge from './Badge';
 import Card from './Card';
+import CardHeader from './CardHeader';
+
+import morpheusLogo from '../assets/morpheus.svg';
+import bertramLogo from '../assets/bertram.svg';
+import hpeLogo from '../assets/hpe.svg';
 
 import employmentData from '../data/employment.json';
+
+const renderNodeIcon = (item) => {
+  if (item.company.includes('HPE') || item.company.includes('Hewlett') || item.id === 1) {
+    return <img src={hpeLogo} alt="HPE" className={styles.hpeLogoIcon} />;
+  }
+  if (item.company.includes('Morpheus') || item.id === 2) {
+    return <img src={morpheusLogo} alt="Morpheus Data" className={styles.morpheusLogoIcon} />;
+  }
+  if (item.company.includes('Bertram') || item.id === 3) {
+    return <img src={bertramLogo} alt="Bertram Labs" className={styles.bertramLogoIcon} />;
+  }
+  return <Briefcase size={15} />;
+};
 
 const renderImpactIcon = (iconType) => {
   switch (iconType) {
@@ -81,7 +99,7 @@ export default function Employment() {
             return (
               <div key={item.id} className={styles.timelineItem} id={`job-${item.id}`}>
                 <div className={`${styles.nodeIcon} ${item.current ? styles.current : ''}`}>
-                  <Briefcase size={15} />
+                  {renderNodeIcon(item)}
                   {item.current && <span className={styles.pulseRing}></span>}
                 </div>
 
@@ -90,13 +108,12 @@ export default function Employment() {
                   onClick={(e) => toggleExpand(item.id, item.role, e)}
                   title="Click to expand/collapse mission briefing"
                 >
-                  <div className={styles.cardHeader}>
-                    <div>
-                      <h3 className={styles.roleTitle}>{item.role}</h3>
-                      <div className={styles.companyName}>{item.company}</div>
-                    </div>
-                    <Badge variant="emerald" size="md" interactive={false}>{item.period}</Badge>
-                  </div>
+                  <CardHeader
+                    className={styles.jobCardHeader}
+                    title={item.role}
+                    subtitle={item.company}
+                    actions={<Badge variant="emerald" size="md" interactive={false}>{item.period}</Badge>}
+                  />
 
                   <p className={styles.missionSummary}>{item.summary}</p>
 

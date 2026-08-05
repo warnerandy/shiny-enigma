@@ -5,6 +5,7 @@ import interestsData from '../data/interests.json';
 import { Terminal, Compass } from 'lucide-react';
 import Badge from './Badge';
 import Card from './Card';
+import CardHeader from './CardHeader';
 
 const SoccerBallIcon = ({ size = 28 }) => (
   <svg width={size} height={size} viewBox="0 0 256 256">
@@ -111,10 +112,13 @@ export default function Interests({ onShowToast }) {
         <div className={styles.grid}>
           {interestsData.map((item) => (
             <Card key={item.id} className={styles.card}>
-              <div className={styles.cardHeader}>
-                <div className={styles.iconBox}>{getIcon(item.id)}</div>
-                <h3 className={styles.cardTitle}>{item.title}</h3>
-              </div>
+              <CardHeader
+                icon={getIcon(item.id)}
+                iconVariant="gold"
+                iconSize="lg"
+                iconClassName={styles.interestIcon}
+                title={item.title}
+              />
 
               <p className={styles.description}>{item.description}</p>
 

@@ -5,6 +5,7 @@ import { Search, Terminal, Code, Database, Cpu, Cloud, Layers } from 'lucide-rea
 import confetti from 'canvas-confetti';
 import Badge from './Badge';
 import Card from './Card';
+import CardHeader from './CardHeader';
 
 import skillsData from '../data/skills.json';
 
@@ -82,10 +83,11 @@ export default function Experience() {
                 className={styles.skillCard}
               >
                 <div>
-                  <div className={styles.cardHeader}>
-                    <h3>{skill.name}</h3>
-                    <Badge variant="gold" size="md">{skill.category}</Badge>
-                  </div>
+                  <CardHeader
+                    className={styles.skillCardHeader}
+                    title={skill.name}
+                    actions={<Badge variant="gold" size="md">{skill.category}</Badge>}
+                  />
 
                   <p className={styles.explorerNote}>{skill.note}</p>
                 </div>

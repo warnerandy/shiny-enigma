@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 180" width="100%" height="100%">
+  <!-- White H, P, and upper E (top bar & top half of stem) -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="36" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- H -->
+    <path d="M 18 180 V 0 M 172 180 V 0 M 18 89 h 154" />
+    <!-- P -->
+    <path d="M 267 180 V 0 M 267 18 h 102 a 32 32 0 0 1 0 100 H 267" />
+    <!-- E upper part (top bar & top half of stem) -->
+    <path d="M 494 89 V 18 M 494 18 h 150" />
+  </g>
+
+  <!-- Signature HPE Green Accent (middle bar, lower stem, and bottom bar of E) -->
+  <g fill="none" stroke="#01A982" stroke-width="36" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M 494 89 V 180 M 494 89 h 100 M 494 180 h 150" />
+  </g>
+</svg>

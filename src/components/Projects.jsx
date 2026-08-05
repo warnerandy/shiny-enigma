@@ -5,6 +5,7 @@ import projectsData from '../data/projects.json';
 import { Bot, Code2, Activity, Home, FolderGit2 } from 'lucide-react';
 import Badge from './Badge';
 import Card from './Card';
+import CardHeader from './CardHeader';
 
 export default function Projects() {
   const getIcon = (iconType) => {
@@ -38,12 +39,13 @@ export default function Projects() {
         <div className={styles.grid}>
           {projectsData.map((project) => (
             <Card key={project.id} className={styles.card}>
-              <div className={styles.cardHeader}>
-                <div className={styles.iconBox}>{getIcon(project.iconType)}</div>
-                <div className={styles.headerText}>
-                  <h3>{project.title}</h3>
-                </div>
-              </div>
+              <CardHeader
+                icon={getIcon(project.iconType)}
+                iconVariant="emerald"
+                iconSize="md"
+                iconClassName={styles.projectIcon}
+                title={project.title}
+              />
 
               <div className={styles.badgeRow}>
                 <Badge variant="gold" size="sm">{project.badge}</Badge>

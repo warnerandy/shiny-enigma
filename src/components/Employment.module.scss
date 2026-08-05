@@ -12,10 +12,10 @@
   position: relative;
   max-width: 920px;
   margin: 0 auto;
-  padding-left: 36px;
+  padding-left: 48px;
 
   @include respond-to(mobile) {
-    padding-left: 24px;
+    padding-left: 32px;
   }
 
   // Glowing vertical timeline line
@@ -24,14 +24,14 @@
     position: absolute;
     top: 10px;
     bottom: 10px;
-    left: 14px;
+    left: 16px;
     width: 3px;
     background: linear-gradient(180deg, var(--accent-emerald) 0%, var(--accent-gold) 50%, rgba(16, 185, 129, 0.2) 100%);
     border-radius: 3px;
     box-shadow: 0 0 12px var(--accent-emerald);
 
     @include respond-to(mobile) {
-      left: 10px;
+      left: 12px;
     }
   }
 }
@@ -48,8 +48,9 @@
 
 .nodeIcon {
   position: absolute;
-  left: -36px;
+  left: -30.5px;
   top: 0px;
+  transform: translateX(-50%);
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -63,10 +64,37 @@
   transition: all $transition-bounce;
   box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
 
+  svg {
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
+
+  .morpheusLogoIcon,
+  .bertramLogoIcon,
+  .hpeLogoIcon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: block;
+  }
+
   @include respond-to(mobile) {
-    left: -24px;
-    width: 26px;
-    height: 26px;
+    left: -18.5px;
+    width: 28px;
+    height: 28px;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .morpheusLogoIcon,
+    .bertramLogoIcon,
+    .hpeLogoIcon {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &.current {
@@ -99,35 +127,30 @@
   &:hover {
     border-color: var(--accent-emerald);
     
-    .cardHeader .roleTitle {
+    .jobCardHeader h3 {
       color: var(--accent-emerald-light);
     }
   }
 }
 
-.cardHeader {
-  display: flex;
-  justify-content: space-between;
+.jobCardHeader {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 12px;
 
-  .roleTitle {
+  h3 {
     font-size: 1.4rem;
     font-weight: 800;
-    color: #fff;
-    transition: color $transition-fast;
 
     @include respond-to(mobile) {
       font-size: 1.2rem;
     }
   }
 
-  .companyName {
+  div {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--accent-gold);
   }
 }
 
