@@ -1,0 +1,29 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+  transition: all $transition-normal;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  &.hoverable {
+    &:hover {
+      border-color: var(--glass-border-hover);
+      background: var(--glass-bg-light);
+      box-shadow: 0 12px 40px rgba(16, 185, 129, 0.15);
+      transform: translateY(-4px);
+    }
+  }
+
+  &.clickable {
+    cursor: pointer;
+  }
+}

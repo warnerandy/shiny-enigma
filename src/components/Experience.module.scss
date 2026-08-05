@@ -115,13 +115,8 @@
 }
 
 .skillCard {
-  @include glass-card;
   padding: 24px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  overflow: hidden;
 
   &:hover {
     border-color: var(--accent-emerald);
@@ -148,15 +143,6 @@
       color: #fff;
       transition: color $transition-fast;
       line-height: 1.35;
-    }
-
-    .categoryBadge {
-      @include badge-pill(var(--accent-gold), rgba(245, 158, 11, 0.12));
-      font-size: 0.75rem;
-      padding: 4px 12px;
-      white-space: nowrap;
-      display: inline-flex;
-      letter-spacing: 0.5px;
     }
   }
 

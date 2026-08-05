@@ -14,9 +14,7 @@
   margin-bottom: 4rem;
 
   .badge {
-    @include badge-pill(var(--accent-emerald), rgba(var(--accent-emerald-rgb), 0.15));
     margin-bottom: 1rem;
-    font-size: 0.75rem;
     letter-spacing: 2px;
   }
 

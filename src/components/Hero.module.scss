@@ -153,9 +153,13 @@
   margin-bottom: 32px;
 
   span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     font-family: var(--font-code);
     font-size: 0.78rem;
-    padding: 4px 12px;
+    padding: 7px 14px 6px 14px;
     border-radius: 50px;
     background: rgba(16, 185, 129, 0.08);
     border: 1px solid rgba(16, 185, 129, 0.25);

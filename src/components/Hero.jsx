@@ -115,7 +115,7 @@ export default function Hero() {
             <Quote size={36} />
           </div>
           <blockquote className={styles.quoteText}>
-            "I program because I am passionate about complex problems and making beautiful solutions. Programming and front end development allow me to do this every day."
+            "I program because I am passionate about solving complex problems and building beautiful applications. Being a software developer allows me to do this every day."
           </blockquote>
           <div className={styles.quoteAuthor}>
             <Terminal size={18} />

@@ -39,6 +39,7 @@
 .timelineItem {
   position: relative;
   margin-bottom: 44px;
+  scroll-margin-top: 96px;
 
   &:last-child {
     margin-bottom: 0;
@@ -89,11 +90,7 @@
 }
 
 .card {
-  @include glass-card;
-  padding: 28px 32px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
+  padding: 30px;
 
   @include respond-to(mobile) {
     padding: 20px;
@@ -131,11 +128,6 @@
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--accent-gold);
-  }
-
-  .dateBadge {
-    @include badge-pill(var(--accent-emerald), rgba(16, 185, 129, 0.12));
-    font-size: 0.78rem;
   }
 }
 
@@ -179,7 +171,11 @@
   padding-top: 16px;
 
   span {
-    padding: 4px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 6px 12px 5px 12px;
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.05);
     color: var(--text-secondary);

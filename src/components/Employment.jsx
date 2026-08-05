@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import styles from './Employment.module.scss';
 import { Briefcase, ChevronDown, ChevronUp, Award, TrendingUp, Users, Zap } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import Badge from './Badge';
+import Card from './Card';
 
 import employmentData from '../data/employment.json';
 
@@ -40,15 +42,32 @@ const parseFormattedText = (text) => {
 export default function Employment() {
   const [expandedId, setExpandedId] = useState(1); // Default first one expanded
 
-  const toggleExpand = (id, role) => {
+  const toggleExpand = (id, role, event) => {
     setExpandedId(prev => (prev === id ? null : id));
+
+    const cardElement = event?.currentTarget;
+    if (cardElement) {
+      setTimeout(() => {
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.getBoundingClientRect().height : 80;
+        const offset = headerHeight + 16; // 16px gap below nav header
+
+        const elementTop = cardElement.getBoundingClientRect().top + window.scrollY;
+        const targetScroll = elementTop - offset;
+
+        window.scrollTo({
+          top: Math.max(0, targetScroll),
+          behavior: 'smooth'
+        });
+      }, 50);
+    }
   };
 
   return (
     <section className={styles.section} id="employment">
       <div className="container">
         <div className="section-header">
-          <div className="section-badge">CAREER HISTORY // EMPLOYMENT TIMELINE</div>
+          <Badge className="section-badge" interactive={false}>CAREER HISTORY // EMPLOYMENT TIMELINE</Badge>
           <h2>Professional Employment History</h2>
           <p>
             We all have story, for me it involves a lot of hard work, determination, and a passion for building great products.
@@ -60,15 +79,15 @@ export default function Employment() {
             const isExpanded = expandedId === item.id;
 
             return (
-              <div key={item.id} className={styles.timelineItem}>
+              <div key={item.id} className={styles.timelineItem} id={`job-${item.id}`}>
                 <div className={`${styles.nodeIcon} ${item.current ? styles.current : ''}`}>
                   <Briefcase size={15} />
                   {item.current && <span className={styles.pulseRing}></span>}
                 </div>
 
-                <div
+                <Card
                   className={styles.card}
-                  onClick={() => toggleExpand(item.id, item.role)}
+                  onClick={(e) => toggleExpand(item.id, item.role, e)}
                   title="Click to expand/collapse mission briefing"
                 >
                   <div className={styles.cardHeader}>
@@ -76,7 +95,7 @@ export default function Employment() {
                       <h3 className={styles.roleTitle}>{item.role}</h3>
                       <div className={styles.companyName}>{item.company}</div>
                     </div>
-                    <span className={styles.dateBadge}>{item.period}</span>
+                    <Badge variant="emerald" size="md" interactive={false}>{item.period}</Badge>
                   </div>
 
                   <p className={styles.missionSummary}>{item.summary}</p>
@@ -122,7 +141,7 @@ export default function Employment() {
                       ))}
                     </ul>
                   )}
-                </div>
+                </Card>
               </div>
             );
           })}

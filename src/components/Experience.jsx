@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import styles from './Experience.module.scss';
 import { Search, Terminal, Code, Database, Cpu, Cloud, Layers } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import Badge from './Badge';
+import Card from './Card';
 
 import skillsData from '../data/skills.json';
 
@@ -33,10 +35,10 @@ export default function Experience() {
     <section className={styles.section} id="experience">
       <div className="container">
         <div className="section-header">
-          <div className="section-badge">CORE COMPETENCIES // TECHNICAL MATRIX</div>
+          <Badge className="section-badge" interactive={false}>CORE COMPETENCIES // TECHNICAL MATRIX</Badge>
           <h2>Technical Experience & Arsenal</h2>
           <p>
-            An interactive radar of my full-stack capabilities, centered on frontend architecture, glassmorphic design systems, React performance, and beautiful enterprise applications.
+            An interactive radar of my full-stack capabilities, with deep expertise in frontend architecture, React performance, design systems, and beautiful enterprise applications.
           </p>
         </div>
 
@@ -75,14 +77,14 @@ export default function Experience() {
         {filteredSkills.length > 0 ? (
           <div className={styles.skillGrid}>
             {filteredSkills.map(skill => (
-              <div
+              <Card
                 key={skill.id}
                 className={styles.skillCard}
               >
                 <div>
                   <div className={styles.cardHeader}>
                     <h3>{skill.name}</h3>
-                    <span className={styles.categoryBadge}>{skill.category}</span>
+                    <Badge variant="gold" size="md">{skill.category}</Badge>
                   </div>
 
                   <p className={styles.explorerNote}>{skill.note}</p>
@@ -100,7 +102,7 @@ export default function Experience() {
                     ></div>
                   </div>
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
         ) : (

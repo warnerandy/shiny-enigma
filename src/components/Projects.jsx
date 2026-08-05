@@ -3,6 +3,8 @@ import React from 'react';
 import styles from './Projects.module.scss';
 import projectsData from '../data/projects.json';
 import { Bot, Code2, Activity, Home, FolderGit2 } from 'lucide-react';
+import Badge from './Badge';
+import Card from './Card';
 
 export default function Projects() {
   const getIcon = (iconType) => {
@@ -24,7 +26,7 @@ export default function Projects() {
     <section id="projects" className={styles.projectsSection}>
       <div className="container">
         <div className={styles.header}>
-          <div className={styles.badge}>PROJECT LAB // FEATURED SIDE PROJECTS</div>
+          <Badge className={styles.badge} interactive={false}>PROJECT LAB // FEATURED SIDE PROJECTS</Badge>
           <h2 className={styles.title}>
             Side Projects
           </h2>
@@ -35,7 +37,7 @@ export default function Projects() {
 
         <div className={styles.grid}>
           {projectsData.map((project) => (
-            <div key={project.id} className={styles.card}>
+            <Card key={project.id} className={styles.card}>
               <div className={styles.cardHeader}>
                 <div className={styles.iconBox}>{getIcon(project.iconType)}</div>
                 <div className={styles.headerText}>
@@ -44,7 +46,7 @@ export default function Projects() {
               </div>
 
               <div className={styles.badgeRow}>
-                <span className={styles.badgePill}>{project.badge}</span>
+                <Badge variant="gold" size="sm">{project.badge}</Badge>
               </div>
 
               <p className={styles.summary}>{project.summary}</p>
@@ -62,7 +64,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

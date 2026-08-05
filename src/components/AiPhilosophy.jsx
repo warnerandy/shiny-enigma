@@ -3,6 +3,7 @@ import styles from './AiPhilosophy.module.scss';
 import aiData from '../data/aiPhilosophy.json';
 import { Cpu, Compass, Zap, Shield, Quote, Sparkles, Terminal } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import Badge from './Badge';
 
 export default function AiPhilosophy() {
   const [answerIndex, setAnswerIndex] = useState(0);
@@ -25,7 +26,7 @@ export default function AiPhilosophy() {
     <section id={aiData.sectionId} className={styles.aiSection}>
       <div className="container">
         <div className={styles.header}>
-          <div className={styles.badge}>{aiData.badge}</div>
+          <Badge className={styles.badge} interactive={false}>{aiData.badge}</Badge>
           <h2 className={styles.title}>
             {aiData.title.split('AI')[0]} <span>AI</span> {aiData.title.split('AI')[1]}
           </h2>

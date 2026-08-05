@@ -38,8 +38,10 @@
 @mixin badge-pill($color: var(--accent-emerald), $bg: var(--accent-emerald-subtle)) {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
-  padding: 5px 12px;
+  padding: 6px 12px 5px 12px;
+  line-height: 1;
   border-radius: 9999px;
   font-family: var(--font-code);
   font-size: 0.78rem;

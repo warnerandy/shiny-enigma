@@ -3,6 +3,8 @@ import React from 'react';
 import styles from './Interests.module.scss';
 import interestsData from '../data/interests.json';
 import { Terminal, Compass } from 'lucide-react';
+import Badge from './Badge';
+import Card from './Card';
 
 const SoccerBallIcon = ({ size = 28 }) => (
   <svg width={size} height={size} viewBox="0 0 256 256">
@@ -46,7 +48,7 @@ const SwordIcon = ({ size = 28 }) => (
 
 const FishingRodIcon = ({ size = 28 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    {/* Main angled fly rod shaft */}
+    {/* Angled fly rod shaft */}
     <line x1="2" y1="13" x2="16" y2="5" strokeWidth="2" />
     {/* Cork grip handle */}
     <rect x="2" y="12" width="4.5" height="2" rx="1" transform="rotate(-29 4.2 13)" fill="currentColor" fillOpacity="0.8" />
@@ -97,7 +99,7 @@ export default function Interests({ onShowToast }) {
     <section id="interests" className={styles.interestsSection}>
       <div className="container">
         <div className={styles.header}>
-          <div className={styles.badge}>PERSONAL // PASSIONS & INTERESTS</div>
+          <Badge className={styles.badge} interactive={false}>PERSONAL // PASSIONS & INTERESTS</Badge>
           <h2 className={styles.title}>
             Beyond The <span>Terminal</span>
           </h2>
@@ -108,7 +110,7 @@ export default function Interests({ onShowToast }) {
 
         <div className={styles.grid}>
           {interestsData.map((item) => (
-            <div key={item.id} className={styles.card}>
+            <Card key={item.id} className={styles.card}>
               <div className={styles.cardHeader}>
                 <div className={styles.iconBox}>{getIcon(item.id)}</div>
                 <h3 className={styles.cardTitle}>{item.title}</h3>
@@ -118,10 +120,10 @@ export default function Interests({ onShowToast }) {
 
               {item.tag && (
                 <div className={styles.interestTag}>
-                  <span>{item.tag}</span>
+                  <Badge variant="gold" size="sm">{item.tag}</Badge>
                 </div>
               )}
-            </div>
+            </Card>
           ))}
         </div>
       </div>

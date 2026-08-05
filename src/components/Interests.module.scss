@@ -16,9 +16,7 @@
   padding-top: 40px;
 
   .badge {
-    @include badge-pill(var(--accent-emerald), rgba(16, 185, 129, 0.15));
     margin-bottom: 1rem;
-    font-size: 0.75rem;
     letter-spacing: 2px;
   }
 
@@ -64,13 +62,8 @@
 }
 
 .card {
-  @include glass-card;
   padding: 28px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  overflow: hidden;
 
   &:hover {
     border-color: var(--accent-gold);
@@ -129,18 +122,6 @@
   margin-top: auto;
   padding-top: 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
-
-  span {
-    font-family: var(--font-code);
-    font-size: 0.75rem;
-    padding: 4px 10px;
-    border-radius: 50px;
-    background: rgba(245, 158, 11, 0.1);
-    border: 1px solid rgba(245, 158, 11, 0.3);
-    color: var(--accent-gold);
-    letter-spacing: 0.3px;
-    display: inline-block;
-  }
 }
 
 .interactiveArea {
