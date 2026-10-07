@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 import projectsData from '../data/projects.json';
-import { Bot, Code2, Activity, Home, FolderGit2 } from 'lucide-react';
+import { Bot, Code2, Activity, Home, FolderGit2, Cpu } from 'lucide-react';
 import Badge from './Badge';
 import Card from './Card';
 import CardHeader from './CardHeader';
@@ -18,6 +18,8 @@ export default function Projects() {
         return <Activity size={26} />;
       case 'home':
         return <Home size={26} />;
+      case 'cpu':
+        return <Cpu size={26} />;
       default:
         return <FolderGit2 size={26} />;
     }

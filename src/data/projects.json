@@ -44,5 +44,28 @@
     "github": "#",
     "demo": "#",
     "iconType": "home"
+  },
+  {
+    "id": "hivemind",
+    "title": "Hivemind Swarm Intelligence Platform",
+    "category": "Multi-Agent AI & Distributed Systems",
+    "badge": "MULTI-AGENT SWARM ORCHESTRATION",
+    "summary": "Hivemind is an autonomous multi-agent orchestration framework designed to allow specialized AI agents to collaborate on complex software tasks. Combining shared contextual memory, real-time message routing, and task decomposition, Hivemind enables AI swarms to solve full-stack engineering problems in parallel.",
+    "highlights": [
+      "Autonomous multi-agent task routing and dynamic delegation",
+      "Shared contextual memory graph with real-time state synchronization",
+      "Interactive UI dashboard for monitoring agent execution traces and tool calls"
+    ],
+    "tech": [
+      "Elixir / Phoenix",
+      "React",
+      "TypeScript",
+      "LLM Agents",
+      "WebSockets",
+      "PostgreSQL"
+    ],
+    "github": "#",
+    "demo": "#",
+    "iconType": "cpu"
   }
 ]
